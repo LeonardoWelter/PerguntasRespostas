@@ -1,0 +1,17 @@
+.btn-group.special {
+    display: flex;
+}
+
+.special .btn {
+    flex: 1
+}
+
+label {
+    border-bottom: 2px solid #d9d9d9;
+    padding: 5px;
+    margin: 0px;
+}
+
+.semborda {
+    border: none;
+}
