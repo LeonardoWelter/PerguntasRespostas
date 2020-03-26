@@ -14,7 +14,7 @@ function recuperarRespostas() {
 
 
 function recuperarRespostas2() {
-    let numQuestoes = document.querySelectorAll('input[type="radio"]').length / 5;
+    let numQuestoes = 1; //document.querySelectorAll('input[type="radio"]').length / 5;
     let respostas = [];
 
     let i = 0;

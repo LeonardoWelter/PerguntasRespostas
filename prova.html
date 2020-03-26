@@ -1,3 +1,8 @@
+<!--
+
+TODO: Gerar automaticamente as questões com base no arquivo JSON; É necessário fazer o mesmo processo de atribuição feito nas alternativas;
+
+-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,7 +16,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/scripts.js"></script>
 
-    <title>Prova do Zap - Perguntas e Repostas&copy;</title>
+    <title>Carregando - Perguntas e Repostas&copy;</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -52,37 +57,23 @@
 </nav>
 
 <div class="container">
-<section>
-    <h3 class="text-center mt-3 mb-5">Prova do Zap - 19/03/2020</h3>
+<section id="prova">
+<!--    <h3 id="nomeProva" class="text-center mt-3 mb-5">Prova do Zap - 19/03/2020</h3>-->
 
-    <div class="card w-100 mb-5">
-        <!--        <img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
-            <h5 class="card-title">Questão 1</h5>
-            <p class="card-text">Conforme o Zap apresentado assinale a alternativa CORRETA:</p>
-        </div>
-                <ul class="list-group list-group-flush">
-                    <label for="q1a1"><li class="list-group-item"><input id="q1a1" value="a" name="questao" type="radio" class="mr-2">A) Resposta 1</li></label>
-                    <label for="q1a2"><li class="list-group-item"><input id="q1a2" value="b" name="questao" type="radio" class="mr-2">B) Resposta 2</li></label>
-                    <label for="q1a3"><li class="list-group-item"><input id="q1a3" value="c" name="questao" type="radio" class="mr-2">C) Resposta 3</li></label>
-                    <label for="q1a4"><li class="list-group-item"><input id="q1a4" value="d" name="questao" type="radio" class="mr-2">D) Resposta 4</li></label>
-                    <label class="semborda" for="q1a5"><li class="list-group-item"><input id="q1a5" value="e" name="questao" type="radio" class="mr-2">E) Resposta 5</li></label>
-                </ul>
-    </div>
-    <div class="card w-100 mb-5">
-        <!--        <img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
-            <h5 class="card-title">Questão 2</h5>
-            <p class="card-text">Conforme o Zap apresentado assinale a alternativa CORRETA:</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><input value="a" name="questao2" type="radio" class="mr-2">A) Resposta 1</li>
-            <li class="list-group-item"><input value="b" name="questao2" type="radio" class="mr-2">B) Resposta 2</li>
-            <li class="list-group-item"><input value="c" name="questao2" type="radio" class="mr-2">C) Resposta 3</li>
-            <li class="list-group-item"><input value="d" name="questao2" type="radio" class="mr-2">D) Resposta 4</li>
-            <li class="list-group-item"><input value="e" name="questao2" type="radio" class="mr-2">E) Resposta 5</li>
-        </ul>
-    </div>
+<!--    <div class="card w-100 mb-5">-->
+<!--        &lt;!&ndash;        <img src="..." class="card-img-top" alt="...">&ndash;&gt;-->
+<!--        <div class="card-body">-->
+<!--            <h5 class="card-title">Questão 1</h5>-->
+<!--            <p class="card-text">Conforme o Zap apresentado assinale a alternativa CORRETA:</p>-->
+<!--        </div>-->
+<!--                <ul class="list-group list-group-flush">-->
+<!--                    <label for="q1a1"><li class="list-group-item"><input id="q1a1" value="a" name="questao" type="radio" class="mr-2">A) Resposta 1</li></label>-->
+<!--                    <label for="q1a2"><li class="list-group-item"><input id="q1a2" value="b" name="questao" type="radio" class="mr-2">B) Resposta 2</li></label>-->
+<!--                    <label for="q1a3"><li class="list-group-item"><input id="q1a3" value="c" name="questao" type="radio" class="mr-2">C) Resposta 3</li></label>-->
+<!--                    <label for="q1a4"><li class="list-group-item"><input id="q1a4" value="d" name="questao" type="radio" class="mr-2">D) Resposta 4</li></label>-->
+<!--                    <label class="semborda" for="q1a5"><li class="list-group-item"><input id="q1a5" value="e" name="questao" type="radio" class="mr-2">E) Resposta 5</li></label>-->
+<!--                </ul>-->
+<!--    </div>-->
 </section>
 </div>
 
@@ -91,5 +82,124 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+
+    let jsonGlobal;
+
+    // Função que recupera o arquivo JSON que contem a prova utilizando AJAX
+    function loadJSON(callback) {
+
+        let xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open('GET', 'logicaProgramacao.json', true); // Recupera o arquivo JSON
+        xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+                callback(xobj.responseText);
+            }
+        };
+        xobj.send(null);
+    }
+
+    loadJSON(function(resposta) {
+        // Disponibiliza o JSON em uma variável
+        let json = JSON.parse(resposta);
+
+        // Disponibiliza o JSON para ser testado no console do navegador
+        jsonGlobal = json;
+
+        gerarProva(json);
+    });
+
+    function gerarProva(json) {
+        let prova = document.getElementById('prova'); // Section onde será inserida a prova
+        let letras = ['a', 'b', 'c', 'd', 'e']; // Array para atribuir as alternativas uma letra
+        let numeroAlternativas = Object.keys(json.questoes.questao1.alternativas).length; // Verifica a quantidade de alternativas em uma questao
+        let questoes = Object.entries(json.questoes); // Esqueci para que isso serve, mas é util
+
+        document.title = json.nome + ' - Perguntas e Respostas;';
+
+        prova.innerHTML = ''; // Apaga tudo da section
+
+        // Apresenta o nome da prova com base no JSON recebido
+        let h3 = document.createElement('h3');
+        h3.id = 'nomeProva';
+        h3.className = 'text-center mt-3 mb-5';
+        h3.innerHTML = json.nome + " - " + json.data;
+
+        prova.appendChild(h3);
+
+        // Cria a estrutura onde são apresentadas as questões
+        let div1 = document.createElement('div');
+        let div2 = document.createElement('div');
+        let h5 = document.createElement('h5');
+        let p = document.createElement('p');
+        let ul = document.createElement('ul');
+        let label = document.createElement('label');
+        let li = document.createElement('li');
+        let input = document.createElement('input');
+
+        // Loop for que cria os elementos das questões
+        //for (let j = 0; j < questoes.length; j++) {
+
+        div1.className = 'card w-100 mb-5';
+        div2.className = 'card-body';
+
+        h5.className = 'card-title';
+        h5.innerHTML = 'Questão Zap';
+
+        p.className = 'card-text';
+        p.innerHTML = json.questoes.questao1.texto;
+
+        ul.className = 'list-group list-group-flush';
+
+        // Loop for que cria os elementos das alternativas
+        for (let i = 0; i < numeroAlternativas; i++ ) {
+
+            label.htmlFor = 'q1a' + i;
+            if (i == 4) {
+                label.className = 'semBorda';
+            }
+            li.className = 'list-group-item';
+            input.id = 'q1a' + i;
+            input.value = letras[i];
+            input.name = Object.keys(json.questoes)[0];
+            input.type = 'radio';
+            input.className = 'mr-2';
+
+            li.innerHTML = input.outerHTML + letras[i].toUpperCase()+ ') ' + json.questoes.questao1.alternativas[i+1];
+            label.innerHTML = li.outerHTML;
+            ul.innerHTML += label.outerHTML;
+        }
+
+        // Insere os elementos na página -- Deve ser mudado para atribuição padrão com outerHTML para funcionar
+        div2.appendChild(h5);
+        div2.appendChild(p);
+        div1.appendChild(div2);
+        div1.appendChild(ul);
+        prova.appendChild(div1);
+    }
+</script>
 </body>
 </html>
+
+<!--
+
+    <h3 id="nomeProva" class="text-center mt-3 mb-5">Prova do Zap - 19/03/2020</h3>
+
+<div class="card w-100 mb-5">
+    <img src="..." class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">Questão 1</h5>
+    <p class="card-text">Conforme o Zap apresentado assinale a alternativa CORRETA:</p>
+</div>
+<ul class="list-group list-group-flush">
+    <label for="q1a1"><li class="list-group-item"><input id="q1a1" value="a" name="questao" type="radio" class="mr-2">A) Resposta 1</li></label>
+    <label for="q1a2"><li class="list-group-item"><input id="q1a2" value="b" name="questao" type="radio" class="mr-2">B) Resposta 2</li></label>
+    <label for="q1a3"><li class="list-group-item"><input id="q1a3" value="c" name="questao" type="radio" class="mr-2">C) Resposta 3</li></label>
+    <label for="q1a4"><li class="list-group-item"><input id="q1a4" value="d" name="questao" type="radio" class="mr-2">D) Resposta 4</li></label>
+    <label class="semborda" for="q1a5"><li class="list-group-item"><input id="q1a5" value="e" name="questao" type="radio" class="mr-2">E) Resposta 5</li></label>
+</ul>
+
+
+-->
