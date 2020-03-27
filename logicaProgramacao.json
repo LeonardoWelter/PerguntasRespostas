@@ -1,0 +1,27 @@
+{
+  "nome": "Lógica e Técnicas de Programação",
+  "tags": "lógica, programação, desenvolvimento, algoritmo",
+  "data": "25/03/2020",
+  "questoes": {
+    "questao1": {
+      "texto": "A complexidade de algoritmos depende muito do problema a ser resolvido e da solução escolhida para este problema. Quanto mais complexo é o algoritmo, possivelmente mais extenso em termos de código-fonte ele será. Quanto mais regras e tarefas o programa de computador precisar executar, mais complexa será a organização do código-fonte. Isto implica a necessidade de focar muito tempo na organização da escrita dos códigos-fontes de um algoritmo. Sobre a modularização de algoritmos, assinale a alternativa CORRETA:",
+      "alternativas": {
+        "1": "O nível de abstração é reduzido quando o algoritmo é modularizado.",
+        "2": "Os parâmetros são utilizados pelos módulo para construir equações matemáticas.",
+        "3": "A modularização de algoritmos torna o código-fonte mais simples de escrever.",
+        "4": "Modularizar os algoritmos dificulta a escrita de um algoritmo."
+      },
+      "correta": "3"
+    },
+    "questao2": {
+      "texto": "Na área da ciência da computação, os vetores possuem apenas uma dimensão, é considerada uma das mais simples estruturas de dados. Em um vetor, os dados são endereçados por apenas um índice. As estruturas com mais de uma dimensão são conhecidas como matrizes; simplificando, são vetores de vetores. Sobre vetores e matrizes, assinale a alternativa CORRETA:\n",
+      "alternativas" : {
+        "1" : "Os índices de vetores são compostos por dois números, um na vertical e um na horizontal.",
+        "2" : "A leitura de um elemento de um vetor é feita especificando o nome da variável seguido do índice do elemento, disposto entre parênteses.",
+        "3" : "Matrizes utilizam mais de um índice para acessar cada um de seus elementos.",
+        "4" : "Vetores são conhecidos também como matrizes multidimensionais."
+      },
+      "correta": "3"
+    }
+  }
+}
