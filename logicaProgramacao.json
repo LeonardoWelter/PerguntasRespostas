@@ -14,12 +14,92 @@
       "correta": "3"
     },
     "questao2": {
-      "texto": "Na área da ciência da computação, os vetores possuem apenas uma dimensão, é considerada uma das mais simples estruturas de dados. Em um vetor, os dados são endereçados por apenas um índice. As estruturas com mais de uma dimensão são conhecidas como matrizes; simplificando, são vetores de vetores. Sobre vetores e matrizes, assinale a alternativa CORRETA:\n",
+      "texto": "Na área da ciência da computação, os vetores possuem apenas uma dimensão, é considerada uma das mais simples estruturas de dados. Em um vetor, os dados são endereçados por apenas um índice. As estruturas com mais de uma dimensão são conhecidas como matrizes; simplificando, são vetores de vetores. Sobre vetores e matrizes, assinale a alternativa CORRETA:<br>",
       "alternativas" : {
         "1" : "Os índices de vetores são compostos por dois números, um na vertical e um na horizontal.",
         "2" : "A leitura de um elemento de um vetor é feita especificando o nome da variável seguido do índice do elemento, disposto entre parênteses.",
         "3" : "Matrizes utilizam mais de um índice para acessar cada um de seus elementos.",
         "4" : "Vetores são conhecidos também como matrizes multidimensionais."
+      },
+      "correta": "3"
+    },
+    "questao3": {
+      "texto": "As funções, também chamadas de subprogramas ou subalgoritmos, obrigatoriamente retornam um valor ao módulo que fez a sua chamada. A utilização de funções auxilia a prática de modularização, ao invés de escrever um código muito grande, escreve-se vários pequenos algoritmos, que em conjunto possuem a capacidade de resolver um grande problema. Sobre funções, assinale a alternativa CORRETA:",
+      "alternativas" : {
+        "1" : "Todas as funções possuem um nome e podem opcionalmente receber parâmetros de entrada.",
+        "2" : "A utilização de funções na construção de algoritmos causa desorganização do código-fonte.",
+        "3" : "Na linguagem Portugol, a palavra \"Função\" é utilizada para declarar o tipo de dado de retorno.",
+        "4" : "As funções não precisam ter um nome definido."
+      },
+      "correta": "1"
+    },
+    "questao4": {
+      "texto": "Durante o desenvolvimento de um programa de computador, é necessário que o programador faça o planejamento da modularização, a preocupação principal é facilitar o entendimento da organização do algoritmo, tornando a sua estrutura mais transparente e mais fácil de documentar. A prática da modularização ainda agrega benefícios no momento da manutenção do sistema, por tornar o código mais fácil e rápido de entender por um outro programador. Sobre a modularização de algoritmos, analise as sentenças a seguir:<br><br>I- Consistir os dados é a técnica de verificação das entradas de dados, analisando se elas são válidas ou não. <br>II- Os módulos são uma sequência de comandos dentro de um algoritmo com a maior independência possível de outros módulos do algoritmo. <br>III- Os procedimentos não precisam receber um nome durante a sua declaração. <br>IV- As funções são submódulos que produzem apenas um valor de saída. <br>V- As variáveis locais podem ser usadas pelo programa principal. <br><br>Assinale a alternativa CORRETA:",
+      "alternativas" : {
+        "1" : "As sentenças I, II e IV estão corretas.",
+        "2" : "As sentenças I, II e III estão corretas.",
+        "3" : "As sentenças II, III e V estão corretas.",
+        "4" : "Somente a sentença V está correta."
+      },
+      "correta": "1"
+    },
+    "questao5": {
+      "texto": "A construção de algoritmos modularizados auxilia na leitura e no entendimento do código-fonte. Durante a modularização, é constante a utilização de passagem de parâmetros de um módulo para outro, são dados que um algoritmo passa para outro. Sobre a passagem de parâmetros, classifique V para as sentenças verdadeiras e F para as falsas:<br><br>(    ) As funções podem receber apenas um parâmetro de entrada.  <br>(    ) O comando \"retorne ()\" é responsável por enviar uma única informação ao módulo chamador.  <br>(    ) A passagem de parâmetros por valor faz a cópia do valor das variáveis locais e passa para um outro módulo sem alterar as informações originais.  <br>(    ) Os parâmetros também são conhecidos como argumentos. <br><br>Assinale a alternativa que apresenta a sequência CORRETA:",
+      "alternativas" : {
+        "1" : "V - F - F - V.",
+        "2" : "F - V - F - V.",
+        "3" : "F - V - V - F.",
+        "4" : "F - V - V - V."
+      },
+      "correta": "4"
+    },
+    "questao6": {
+      "texto": "As funções e os procedimentos são utilizadas para modularizar os algoritmos, os quais que podem receber dados de entrada. Os procedimentos são uma sequência de instruções específicas, criadas quando existe a necessidade de repetir, por várias vezes, um mesmo trecho de código em um programa. Sobre os procedimentos, analise as sentenças a seguir:<br><br>I- Os procedimentos são uma forma de modularizar os algoritmos. Os módulos são um grupo de comandos de um trecho do algoritmo. <br>II- A palavra \"retorna\" é utilizada pelos procedimentos para retornar um valor ao módulo principal. <br>III- As variáveis locais quando criadas dentro de procedimentos só podem ser utilizadas dentro dos mesmos. <br>IV- Os procedimentos não precisam possuir um nome definido na sua declaração. <br>V- Os procedimentos podem receber passagem de parâmetros por referência ou por valor. <br><br>Assinale a alternativa CORRETA:",
+      "alternativas" : {
+        "1" : "As sentenças I, III e V estão corretas.",
+        "2" : "Somente a sentença I está correta.",
+        "3" : "As sentenças I, II e III estão corretas.",
+        "4" : "As sentenças II, IV e V estão corretas."
+      },
+      "correta": "1"
+    },
+    "questao7": {
+      "texto": "Na linguagem de programação Portugol e nas demais linguagens de programação, existem duas formas de definição de módulos, são elas as funções, que produzem um único valor de saída e os procedimentos que não produzem um valor de saída. Dentro de um módulo, é possível alterar uma variável do algoritmo que o chamou, o que difere de um valor de saída retornado efetivamente por uma função. Sobre funções e procedimentos, classifique V para as sentenças verdadeiras e F para as falsas: <br><br>(    ) Os módulos são compostos pelo cabeçalho, nome, declarações locais e o corpo do algoritmo.  <br>(    ) As funções e os procedimentos são subprogramas, pequenas partes de um programa maior.  <br>(    ) Declarações globais são variáveis que podem ser utilizadas dentro do módulo no qual foram declaradas.  <br>(    ) A utilização de procedimentos e funções dificultam a manutenção e a reutilização do algoritmo escrito pelo desenvolvedor. <br><br>Assinale a alternativa que apresenta a sequência CORRETA:",
+      "alternativas" : {
+        "1" : "V - F - F - F.",
+        "2" : "V - V - F - F.",
+        "3" : "V - V - V - F.",
+        "4" : "F - V - F - V."
+      },
+      "correta": "2"
+    },
+    "questao8": {
+      "texto": "Os vetores multidimensionais possuem quantas dimensões forem necessárias para representar a informação. Os vetores bidimensionais são conhecidos como matrizes, as quais possuem representação visual semelhante a planilhas de Excel. A seguir é apresentada uma matriz com as notas de vários alunos, armazenadas na variável \"notas\" com índices iniciando em zero, em que a primeira coluna armazena o nome do aluno e as demais armazenam suas notas. Sobre matrizes, analise as sentenças a seguir:<br><br>I- Para recuperar a nota 10,00 de Rafaela, será necessário acessar a posição [2][1]. <br>II- Os índices são números que representam unicamente as posições de um elemento dentro da matriz. <br>III- Para recuperar a nota 6,00 de Paulo, é necessário acessar a posição [1][2]. <br>IV- A execução do comando \"escreva ( notas[2][2] )\" será \"Rafaela\".<br><br>Assinale a alternativa CORRETA: <br><img src='img/lPQ8.png'>",
+      "alternativas" : {
+        "1" : "As sentenças III e IV estão corretas.",
+        "2" : "As sentenças I e II estão corretas.",
+        "3" : "Somente a sentença II está correta.",
+        "4" : "As sentenças II e IV estão corretas."
+      },
+      "correta": "2"
+    },
+    "questao9": {
+      "texto": "A palavra proposição vem de \"propor\", que significa submeter à apreciação, requerer um juízo. É uma sentença declarativa, ou seja, está declarada por meio de termos, palavras ou símbolos. Seu conteúdo pode ser considerado apenas verdadeiro ou falso. São exemplos de proposições \"Rafaela é bonita\" e \"Rafaela é professora\". Sobre a lógica proposicional, analise as sentenças a seguir: <br><br>I- A operação de cálculo proposicional de conjunção é representada pelo símbolo \"v\". <br>II- A sentença \"1951 > 2015\" é uma proposição válida. <br>III- A presença de dois conectivos \"ou\" em uma sentença caracteriza uma disjunção exclusiva. <br>IV- \"Paulo é carpinteiro e Jacó é advogado\" é uma proposição composta. <br><br>Assinale a alternativa CORRETA:",
+      "alternativas" : {
+        "1" : "As sentenças I, II e III estão corretas.",
+        "2" : "As sentenças I e IV estão corretas.",
+        "3" : "As sentenças II, III e IV estão corretas.",
+        "4" : "As sentenças I, III e IV estão corretas."
+      },
+      "correta": "3"
+    },
+    "questao10": {
+      "texto": "As proposições podem ser combinadas entre si e, para representar essas combinações, são utilizados os conectivos lógicos \"e\", \"ou\", \"se...então\", \"se e somente se\" ou \"não\". A finalidade dos conectivos é conectar duas ou mais proposições. Sobre conectivos lógicos assinale a alternativa CORRETA que apresenta uma proposição com conjunção:",
+      "alternativas" : {
+        "1" : "O café não é preto.",
+        "2" : "Se o café é preto então o leite é branco.",
+        "3" : "O café é preto e o leite é branco.",
+        "4" : "O café é preto ou o leite é branco."
       },
       "correta": "3"
     }

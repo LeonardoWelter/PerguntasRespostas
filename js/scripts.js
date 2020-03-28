@@ -1,7 +1,10 @@
+// Váriavel que disponibiliza o JSON de maneira global para todos as funções,
+// Risco de segurança, visto que está disponível pelo console também.
 let _JSON;
 
+// Função que recupera quais alternativas o usuário marcou e as adiciona em um Array indexado com o nome da questão.
 function recuperarRespostas() {
-    let numQuestoes = Object.entries(_JSON.questoes).length;//document.querySelectorAll('input[type="radio"]').length / 5;
+    let numQuestoes = Object.entries(_JSON.questoes).length;
     let marcadas = document.querySelectorAll('input[type="radio"]:checked');
     let respostas = [];
 
@@ -15,7 +18,7 @@ function recuperarRespostas() {
     return respostas;
 }
 
-
+// Mesma função que a anterior, porém retorna em JSON.
 function recuperarRespostas2() {
     let numQuestoes = document.querySelectorAll('input[type="radio"]').length / 4;
     let respostas = [];
@@ -30,6 +33,7 @@ function recuperarRespostas2() {
     return JSON.stringify(respostas);
 }
 
+// Função que altera a estilização das alternativas corretas.
 function marcarCorreta(nomeInput, valor) {
     let certo = "<i class='fas fa-check fa-lg mr-2'></i>";
     let li = document.querySelectorAll("input[name='"+ nomeInput+"'][value='"+valor+"']")[0].parentNode; //document.getElementById(elemento).parentNode;
@@ -42,9 +46,11 @@ function marcarCorreta(nomeInput, valor) {
     li.className += ' bg-success text-white';
 }
 
+// Função que altera a estilização das alternativas incorretas, caso for chamada,
+// ela realiza o chamado da função marcarCorreta() para marcar a alternativa correta.
 function marcarIncorreta(nomeInput, valor, valorCorreta) {
     let errado = "<i class='fas fa-times fa-lg mr-3'></i>";
-    let li = document.querySelectorAll("input[name='"+ nomeInput+"'][value='"+valor+"']")[0].parentNode;;
+    let li = document.querySelectorAll("input[name='"+ nomeInput+"'][value='"+valor+"']")[0].parentNode;
     let label = li.parentNode;
 
     label.className += ' bg-danger';
@@ -54,14 +60,19 @@ function marcarIncorreta(nomeInput, valor, valorCorreta) {
     marcarCorreta(nomeInput, valorCorreta);
 }
 
+// Remove os inputs das questões para melhor legibilidade.
 function removerInputs() {
     let inputs = document.getElementsByTagName('input');
 
+    // Inicia o loop no 1 para não remover o input de busca da navbar
     for (let i = 1; i < inputs.length; i++) {
         inputs[i].hidden = true;
     }
 }
 
+// Exibe o gabarito ao final da prova, remove o botão Corrigir e torna visível a tabela
+// que mostra as respostas, caso a resposta de um questão seja correta, o fundo do campo da tabela
+// será verde. Caso esteja incorreta, o fundo será vermelho e entre parênteses será exibida a resposta correta;
 function exibirGabarito(gabarito, marcadas, totalQuestoes) {
     let letras = ['a', 'b', 'c', 'd', 'e'];
     let erros = 0;
@@ -76,7 +87,7 @@ function exibirGabarito(gabarito, marcadas, totalQuestoes) {
     let rGab = document.getElementById('respostasGabarito');
     let eGab = document.getElementById('errosGabarito');
     let aGab = document.getElementById('acertosGabarito');
-    let tdQuestao = document.createElement('td')
+    let tdQuestao = document.createElement('td');
     let tdResposta = document.createElement('td');
 
 
@@ -87,6 +98,7 @@ function exibirGabarito(gabarito, marcadas, totalQuestoes) {
             tdResposta.className = 'bg-success';
             acertos += 1;
         } else {
+            tdResposta.innerText += ' (' + letras[gabarito[numQuestoes][1]-1].toUpperCase() + ')';
             tdResposta.className = 'bg-danger';
             erros += 1;
         }
@@ -97,6 +109,10 @@ function exibirGabarito(gabarito, marcadas, totalQuestoes) {
     }
 }
 
+// Realiza a correção da prova, utiliza os dados do JSON para obter o gabarito
+// e a função recuperarRespostas() para obter as alternativas marcadas pelo usuário,
+// então, inicia um Loop comparar as respostas, chamando as funções de estilização
+// das alternativas conforme o resultado.
 function corrigirProva() {
     let json = Object.entries(_JSON.questoes);
     let respostas = recuperarRespostas();
@@ -118,6 +134,8 @@ function corrigirProva() {
     exibirGabarito(gabarito, respostas, totalQuestoes);
 }
 
+// Função que recebe os dados do JSON e transforma-os em elementos HTML para a exibição
+// ao usuário
 function gerarProva(json) {
     let prova = document.getElementById('prova'); // Section onde será inserida a prova
     let letras = ['a', 'b', 'c', 'd', 'e']; // Array para atribuir as alternativas uma letra
@@ -133,6 +151,7 @@ function gerarProva(json) {
     h3.id = 'nomeProva';
     h3.className = 'text-center mt-3 mb-5';
     h3.innerHTML = json.nome + " - " + json.data;
+    // Cria o botão responsável por chamar a função de correção da prova
     let button = document.createElement('button');
     button.id = 'btnCorrigeProva';
     button.className = 'btn btn-primary btn-block mb-5';
@@ -197,5 +216,6 @@ function gerarProva(json) {
         ul.innerHTML = '';
     }
 
+    // Insere o botão na página
     prova.appendChild(button);
 }

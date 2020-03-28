@@ -1,10 +1,5 @@
-<!--
-
-TODO: Gerar automaticamente as questões com base no arquivo JSON; É necessário fazer o mesmo processo de atribuição feito nas alternativas;
-
--->
 <!doctype html>
-<html lang="en">
+<html lang="ptBR">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -59,37 +54,22 @@ TODO: Gerar automaticamente as questões com base no arquivo JSON; É necessári
 </nav>
 
 <div class="container">
-<section id="prova">
-<!--    <h3 id="nomeProva" class="text-center mt-3 mb-5">Prova do Zap - 19/03/2020</h3>-->
-
-<!--    <div class="card w-100 mb-5">-->
-<!--        &lt;!&ndash;        <img src="..." class="card-img-top" alt="...">&ndash;&gt;-->
-<!--        <div class="card-body">-->
-<!--            <h5 class="card-title">Questão 1</h5>-->
-<!--            <p class="card-text">Conforme o Zap apresentado assinale a alternativa CORRETA:</p>-->
-<!--        </div>-->
-<!--                <ul class="list-group list-group-flush">-->
-<!--                    <label for="q1a1"><li class="list-group-item"><input id="q1a1" value="a" name="questao" type="radio" class="mr-2">A) Resposta 1</li></label>-->
-<!--                    <label for="q1a2"><li class="list-group-item"><input id="q1a2" value="b" name="questao" type="radio" class="mr-2">B) Resposta 2</li></label>-->
-<!--                    <label for="q1a3"><li class="list-group-item"><input id="q1a3" value="c" name="questao" type="radio" class="mr-2">C) Resposta 3</li></label>-->
-<!--                    <label for="q1a4"><li class="list-group-item"><input id="q1a4" value="d" name="questao" type="radio" class="mr-2">D) Resposta 4</li></label>-->
-<!--                    <label class="semborda" for="q1a5"><li class="list-group-item"><input id="q1a5" value="e" name="questao" type="radio" class="mr-2">E) Resposta 5</li></label>-->
-<!--                </ul>-->
-<!--    </div>-->
-</section>
+    <section id="prova">
+    </section>
+    <!-- Tabela que apresenta o gabarito após a finalização da prova, não é visível até a chamada da função corrigirProva() -->
     <section>
-        <table id="tabelaGabarito" hidden="true" class="table table-bordered">
-            <thead class="thead-light text-center">
+        <table id="tabelaGabarito" hidden class="table table-bordered text-center">
+            <thead class="thead-light">
                 <tr>
                     <th colspan="100">Gabarito</th>
                 </tr>
             </thead>
             <tbody id="corpoGabarito">
-                <tr id="questoesGabarito"></tr>
-                <tr id="respostasGabarito"></tr>
+                <tr id="questoesGabarito" class="text-center"></tr>
+                <tr id="respostasGabarito" class="text-center"></tr>
                 <tr>
-                    <td colspan="100">Você acertou <span id="acertosGabarito">0</span>
-                        questões e errou <span id="errosGabarito">0</span> </td>
+                    <td colspan="100" class="text-center">Você acertou <span id="acertosGabarito">0</span>
+                        e errou <span id="errosGabarito">0</span> questões. </td>
                 </tr>
             </tbody>
         </table>
@@ -122,7 +102,7 @@ TODO: Gerar automaticamente as questões com base no arquivo JSON; É necessári
         // Disponibiliza o JSON em uma variável
         let json = JSON.parse(resposta);
 
-        // Disponibiliza o JSON para ser testado no console do navegador
+        // Disponibiliza o JSON para ser usado pelas funções -- deve ter uma maneira melhor de fazer isso
         _JSON = json;
 
         gerarProva(json);
