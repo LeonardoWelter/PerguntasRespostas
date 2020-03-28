@@ -1,5 +1,7 @@
+let _JSON;
+
 function recuperarRespostas() {
-    let numQuestoes = document.querySelectorAll('input[type="radio"]').length / 5;
+    let numQuestoes = Object.entries(_JSON.questoes).length;//document.querySelectorAll('input[type="radio"]').length / 5;
     let marcadas = document.querySelectorAll('input[type="radio"]:checked');
     let respostas = [];
 
@@ -28,9 +30,9 @@ function recuperarRespostas2() {
     return JSON.stringify(respostas);
 }
 
-function marcarCorreta(elemento) {
-    let certo = "<i class='fas fa-check fa-lg mr-1'></i> &nbsp;";
-    let li = document.getElementById(elemento).parentNode;
+function marcarCorreta(nomeInput, valor) {
+    let certo = "<i class='fas fa-check fa-lg mr-2'></i>";
+    let li = document.querySelectorAll("input[name='"+ nomeInput+"'][value='"+valor+"']")[0].parentNode; //document.getElementById(elemento).parentNode;
     let label = li.parentNode;
 
     removerInputs();
@@ -40,16 +42,16 @@ function marcarCorreta(elemento) {
     li.className += ' bg-success text-white';
 }
 
-function marcarIncorreta(elemento, correta) {
+function marcarIncorreta(nomeInput, valor, valorCorreta) {
     let errado = "<i class='fas fa-times fa-lg mr-3'></i>";
-    let li = document.getElementById(elemento).parentNode;
+    let li = document.querySelectorAll("input[name='"+ nomeInput+"'][value='"+valor+"']")[0].parentNode;;
     let label = li.parentNode;
 
     label.className += ' bg-danger';
     li.innerHTML = errado + li.innerHTML;
     li.className += ' bg-danger text-white';
 
-    marcarCorreta(correta);
+    marcarCorreta(nomeInput, valorCorreta);
 }
 
 function removerInputs() {
@@ -60,17 +62,60 @@ function removerInputs() {
     }
 }
 
-function corrigirProva(/*json, respostas*/) {
-    // let json = {"questao1": {"correta": 3}};
-    // let json2 = Object.entries(json);
-    // let respostas = [];
-    // respostas['questao1'] = '2';
+function exibirGabarito(gabarito, marcadas, totalQuestoes) {
+    let letras = ['a', 'b', 'c', 'd', 'e'];
+    let erros = 0;
+    let acertos = 0;
+    document.getElementById('btnCorrigeProva').remove();
+    document.getElementById('tabelaGabarito').hidden = false;
+    gabarito = Object.entries(gabarito);
+    marcadas = Object.entries(marcadas);
 
-    if (json2[0][1].correta == respostas[json2[0][0]]) {
-        console.log(json2[0][0] + ' correta');
-    } else {
-        console.log(json2[0][0] + ' incorreta');
+
+    let qGab = document.getElementById('questoesGabarito');
+    let rGab = document.getElementById('respostasGabarito');
+    let eGab = document.getElementById('errosGabarito');
+    let aGab = document.getElementById('acertosGabarito');
+    let tdQuestao = document.createElement('td')
+    let tdResposta = document.createElement('td');
+
+
+    for (let numQuestoes = 0; numQuestoes < totalQuestoes; numQuestoes++) {
+        tdQuestao.innerText = numQuestoes+1;
+        tdResposta.innerText = letras[marcadas[numQuestoes][1]-1].toUpperCase();
+        if (marcadas[numQuestoes][1] == gabarito[numQuestoes][1]) {
+            tdResposta.className = 'bg-success';
+            acertos += 1;
+        } else {
+            tdResposta.className = 'bg-danger';
+            erros += 1;
+        }
+        qGab.innerHTML += tdQuestao.outerHTML;
+        rGab.innerHTML += tdResposta.outerHTML;
+        aGab.innerHTML = acertos;
+        eGab.innerHTML = erros;
     }
+}
+
+function corrigirProva() {
+    let json = Object.entries(_JSON.questoes);
+    let respostas = recuperarRespostas();
+    let gabarito = [];
+    let questaoAtual = Object.keys(respostas);
+    let totalQuestoes = json.length;
+
+    for (let questoes = 0; questoes < totalQuestoes; questoes++) {
+        if (json[questoes][1].correta == respostas[json[questoes][0]]) {
+            console.log(json[questoes][0] + ' correta');
+            marcarCorreta(questaoAtual[questoes], '3');
+        } else {
+            console.log(json[questoes][0] + ' incorreta');
+            marcarIncorreta(questaoAtual[questoes], respostas[json[questoes][0]], json[questoes][1].correta);
+        }
+        gabarito[json[questoes][0]] =  json[questoes][1].correta;
+    }
+
+    exibirGabarito(gabarito, respostas, totalQuestoes);
 }
 
 function gerarProva(json) {
@@ -90,7 +135,7 @@ function gerarProva(json) {
     h3.innerHTML = json.nome + " - " + json.data;
     let button = document.createElement('button');
     button.id = 'btnCorrigeProva';
-    button.className = 'btn btn-primary btn-block';
+    button.className = 'btn btn-primary btn-block mb-5';
     button.innerHTML = 'Corrigir';
     button.addEventListener('click', corrigirProva);
 
