@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ptBR">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,10 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/scripts.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a98ff00b7e.js" crossorigin="anonymous"></script>
 
-    <title>Prova do Zap - Perguntas e Repostas&copy;</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Carregando - Perguntas e Repostas&copy;</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,7 +29,7 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="categorias.html" id="navbarDropdown" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Categorias
                 </a>
@@ -52,38 +54,26 @@
 </nav>
 
 <div class="container">
-<section>
-    <h3 class="text-center mt-3 mb-5">Prova do Zap - 19/03/2020</h3>
-
-    <div class="card w-100 mb-5">
-        <!--        <img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
-            <h5 class="card-title">Questão 1</h5>
-            <p class="card-text">Conforme o Zap apresentado assinale a alternativa CORRETA:</p>
-        </div>
-                <ul class="list-group list-group-flush">
-                    <label for="q1a1"><li class="list-group-item"><input id="q1a1" value="a" name="questao" type="radio" class="mr-2">A) Resposta 1</li></label>
-                    <label for="q1a2"><li class="list-group-item"><input id="q1a2" value="b" name="questao" type="radio" class="mr-2">B) Resposta 2</li></label>
-                    <label for="q1a3"><li class="list-group-item"><input id="q1a3" value="c" name="questao" type="radio" class="mr-2">C) Resposta 3</li></label>
-                    <label for="q1a4"><li class="list-group-item"><input id="q1a4" value="d" name="questao" type="radio" class="mr-2">D) Resposta 4</li></label>
-                    <label class="semborda" for="q1a5"><li class="list-group-item"><input id="q1a5" value="e" name="questao" type="radio" class="mr-2">E) Resposta 5</li></label>
-                </ul>
-    </div>
-    <div class="card w-100 mb-5">
-        <!--        <img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
-            <h5 class="card-title">Questão 2</h5>
-            <p class="card-text">Conforme o Zap apresentado assinale a alternativa CORRETA:</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><input value="a" name="questao2" type="radio" class="mr-2">A) Resposta 1</li>
-            <li class="list-group-item"><input value="b" name="questao2" type="radio" class="mr-2">B) Resposta 2</li>
-            <li class="list-group-item"><input value="c" name="questao2" type="radio" class="mr-2">C) Resposta 3</li>
-            <li class="list-group-item"><input value="d" name="questao2" type="radio" class="mr-2">D) Resposta 4</li>
-            <li class="list-group-item"><input value="e" name="questao2" type="radio" class="mr-2">E) Resposta 5</li>
-        </ul>
-    </div>
-</section>
+    <section id="prova">
+    </section>
+    <!-- Tabela que apresenta o gabarito após a finalização da prova, não é visível até a chamada da função corrigirProva() -->
+    <section>
+        <table id="tabelaGabarito" hidden class="table table-sm table-bordered text-center">
+            <thead class="thead-light">
+                <tr>
+                    <th colspan="100">Gabarito</th>
+                </tr>
+            </thead>
+            <tbody id="corpoGabarito">
+                <tr id="questoesGabarito" class="text-center"></tr>
+                <tr id="respostasGabarito" class="text-center"></tr>
+                <tr>
+                    <td colspan="100" class="text-center">Você acertou <span id="acertosGabarito">0</span>
+                        e errou <span id="errosGabarito">0</span> questões. </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 </div>
 
 <!-- Optional JavaScript -->
@@ -91,5 +81,32 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+
+<script>
+    // Função que recupera o arquivo JSON que contem a prova utilizando AJAX
+    function loadJSON(callback) {
+
+        let jsonProva = new XMLHttpRequest();
+        jsonProva.overrideMimeType("application/json");
+        jsonProva.open('GET', 'logicaProgramacao.json', true); // Recupera o arquivo JSON
+        jsonProva.onreadystatechange = function () {
+            if (jsonProva.readyState == 4 && jsonProva.status == "200") {
+                callback(jsonProva.responseText);
+            }
+        };
+        jsonProva.send(null);
+    }
+
+    loadJSON(function(resposta) {
+        // Disponibiliza o JSON em uma variável
+        let json = JSON.parse(resposta);
+
+        // Disponibiliza o JSON para ser usado pelas funções -- deve ter uma maneira melhor de fazer isso
+        _JSON = json;
+
+        gerarProva(json);
+    });
+</script>
 </body>
 </html>
