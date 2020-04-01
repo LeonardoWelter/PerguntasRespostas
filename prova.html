@@ -84,19 +84,6 @@
 <script src="js/scripts.js"></script>
 
 <script>
-    // Função que recupera o arquivo JSON que contem a prova utilizando AJAX
-    function loadJSON(callback) {
-
-        let jsonProva = new XMLHttpRequest();
-        jsonProva.overrideMimeType("application/json");
-        jsonProva.open('GET', 'logicaProgramacao.json', true); // Recupera o arquivo JSON
-        jsonProva.onreadystatechange = function () {
-            if (jsonProva.readyState == 4 && jsonProva.status == "200") {
-                callback(jsonProva.responseText);
-            }
-        };
-        jsonProva.send(null);
-    }
 
     loadJSON(function(resposta) {
         // Disponibiliza o JSON em uma variável
