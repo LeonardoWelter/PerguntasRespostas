@@ -1,0 +1,14 @@
+{
+  "logicaProgramacao1" : {
+    "src": "logicaProgramacao1.json",
+    "nome" : "Lógica e Técnicas de Programação I",
+    "tags": "logica, programação, desenvolvimento, algoritmo",
+    "data" : "25/03/2020"
+  },
+  "logicaProgramacao2" : {
+    "src": "logicaProgramacao2.json",
+    "nome" : "Lógica e Técnicas de Programação II",
+    "tags": "logica, programação, desenvolvimento, algoritmo",
+    "data" : "26/03/2020"
+  }
+}

@@ -2,6 +2,20 @@
 // Risco de segurança, visto que está disponível pelo console também.
 let _JSON;
 
+// Função que recupera o arquivo JSON que contem a prova utilizando AJAX
+function loadJSON(callback) {
+
+    let jsonProva = new XMLHttpRequest();
+    jsonProva.overrideMimeType("application/json");
+    jsonProva.open('GET', 'logicaProgramacao.json', true); // Recupera o arquivo JSON
+    jsonProva.onreadystatechange = function () {
+        if (jsonProva.readyState == 4 && jsonProva.status == "200") {
+            callback(jsonProva.responseText);
+        }
+    };
+    jsonProva.send(null);
+}
+
 // Função que recupera quais alternativas o usuário marcou e as adiciona em um Array indexado com o nome da questão.
 function recuperarRespostas() {
     let numQuestoes = Object.entries(_JSON.questoes).length;
