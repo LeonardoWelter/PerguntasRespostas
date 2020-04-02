@@ -2,20 +2,6 @@
 // Risco de segurança, visto que está disponível pelo console também.
 let _JSON;
 
-// Função que recupera o arquivo JSON que contem a prova utilizando AJAX
-function loadJSON(callback) {
-
-    let jsonProva = new XMLHttpRequest();
-    jsonProva.overrideMimeType("application/json");
-    jsonProva.open('GET', 'logicaProgramacao.json', true); // Recupera o arquivo JSON
-    jsonProva.onreadystatechange = function () {
-        if (jsonProva.readyState == 4 && jsonProva.status == "200") {
-            callback(jsonProva.responseText);
-        }
-    };
-    jsonProva.send(null);
-}
-
 // Função que recupera quais alternativas o usuário marcou e as adiciona em um Array indexado com o nome da questão.
 function recuperarRespostas() {
     let numQuestoes = Object.entries(_JSON.questoes).length;
@@ -171,6 +157,9 @@ function gerarProva(json) {
     button.className = 'btn btn-primary btn-block mb-5';
     button.innerHTML = 'Corrigir';
     button.addEventListener('click', corrigirProva);
+    let span = document.createElement('span');
+    span.id = 'feedback';
+    span.className = 'text-center d-block mb-3';
 
     prova.appendChild(h3);
 
@@ -203,14 +192,14 @@ function gerarProva(json) {
 
             let values = Object.keys(questoes[j][1].alternativas);
 
-            label.id = 'lblQ' + (j+1) + 'A' + i;
-            label.htmlFor = 'q' + (j+1) + 'a' + i;
+            label.id = 'lblQ' + (j+1) + 'A' + (i+1);
+            label.htmlFor = 'q' + (j+1) + 'a' + (i+1);
             if (i == 4) {
                 label.className = 'semBorda';
             }
-            li.id = 'liQ' + (j+1) + 'A' + i;
+            li.id = 'liQ' + (j+1) + 'A' + (i+1);
             li.className = 'list-group-item text-justify';
-            input.id = 'q' + (j+1) + 'a' + i;
+            input.id = 'q' + (j+1) + 'a' + (i+1);
             input.value = values[i];
             input.name = questoes[j][0];
             input.type = 'radio';
@@ -230,6 +219,7 @@ function gerarProva(json) {
         ul.innerHTML = '';
     }
 
+    prova.appendChild(span);
     // Insere o botão na página
     prova.appendChild(button);
 }

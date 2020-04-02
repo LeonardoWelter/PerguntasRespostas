@@ -1,0 +1,107 @@
+{
+  "nome": "Lógica e Técnicas de Programação II",
+  "tags": "lógica, programação, desenvolvimento, algoritmo",
+  "data": "26/03/2020",
+  "questoes": {
+    "questao1": {
+      "texto": "As estruturas de seleção permitem alterar o fluxo de execução do algoritmo, selecionando qual parte do algoritmo deve ser executada. A decisão de qual parte executará é tomada em função de uma condição que resultará os valores verdadeiro ou falso. Esta condição pode ser representada por expressões relacionais ou lógicas. Sobre o exposto, classifique V para as sentenças verdadeiras e F para as falsas:<br><br>(    ) A estrutura de seleção abaixo possui uma saída de dados válida para quaisquer valores possíveis para a variável \"media\".  <code><br>      se media >= 5.0 então  <br>            escreva (\"aluno Aprovado\")</code> <br>(    ) A estrutura de condição caso-seja possuir uma opção padrão para ser executada nas situações em que nenhuma das condições anteriores seja atendida.  <br>(    ) As estruturas de condição simples são representadas genericamente pelo código abaixo. <code><br>      se <expressão lógica> então  <br>            Bloco de comandos;<br>      fim-se</code> <br>(    ) A estrutura de condição abaixo é de condição composta.<code>  <br>      se idade >= 18 então  <br>            \"maior de idade\"  <br>      senão  <br>            \"menor de idade\"  <br>      fimse </code><br><br>Assinale a alternativa que apresenta a sequência CORRETA:",
+      "alternativas": {
+        "1": "F - V - V - V.",
+        "2": "F - V - V - F.",
+        "3": "F - V - F - V.",
+        "4": "V - F - V - V."
+      },
+      "correta": "1"
+    },
+    "questao2": {
+      "texto": "As proposições são quaisquer sentenças que podem assumir o valor de verdadeiro ou falso. As tabelas verdade fazem uso das proposições para determinar todos os possíveis resultados das combinações de verdadeiro ou falso possíveis. Logo, para encontrar o resultado da combinação de proposições, basta analisar qual valor está associado a cada proposição, buscar na tabela e analisar o resultado gerado. Sobre o exposto, classifique V para as sentenças verdadeiras e F para as falsas: <br><br>(    ) A estrutura lógica \" p ^ q \" é verdadeira quando ambas proposições são verdadeiras.  <br>(    ) A estrutura lógica \" p v q \" é falsa quando uma das duas proposições são verdadeiras.  <br>(    ) A tautologia acontece somente se o resultado da expressão for sempre falso.  <br>(    ) A disjunção é representada pelo caractere \" ~ \". <br><br>Assinale a alternativa que apresenta a sequência CORRETA:",
+      "alternativas" : {
+        "1" : "V - F - F - V.",
+        "2" : "V - F - F - F.",
+        "3" : "V - F - V - F.",
+        "4" : "F - V - F - V."
+      },
+      "correta": "2"
+    },
+    "questao3": {
+      "texto": "Uma sequência finita de comandos clara e sem dupla interpretação, são características dos algoritmos, além da necessidade de determinar um estado de parada para a sua execução. Os algoritmos precisam processar muitas informações, e, para isso, as estruturas de repetição são peças fundamentais para executar laços de repetição que permitem trabalhar com a mesma informação várias vezes ou executar uma sequência de passos lógicos repetidamente. Analise o algoritmo e as sentenças a seguir: <br><br><code>01 algoritmo \"contador\" <br>02 var  <br>03           contador : inteiro <br>04 inicio <br>05            enquanto contador <= 10 faca <br>06                        escreval (contador)  <br>07                        contador <- contador + 1 <br>08            fimenquanto <br>09 fimalgoritmo </code><br><br>I- A estrutura de repetição que possui a expressão de teste na linha 05 executará os comandos da linha 06 e 07 por 10 vezes. <br>II- O operador de comparação utilizado na linha 05 verifica se a variável à sua esquerda é menor ou igual ao valor 10. <br>III- Na linha 07, o valor armazenado na variável \"contador\" é atualizado com o próprio valor mais 1. <br>IV- Ao alterar o valor \"1\" da linha 07 para o valor \"2\", o laço será repetido 5 vezes. <br><br>Assinale a alternativa CORRETA:",
+      "alternativas": {
+        "1": "As sentenças I e IV estão corretas.",
+        "2": "As sentenças II e III estão corretas.",
+        "3": "As sentenças I e II estão corretas.",
+        "4": "As sentenças II e IV estão corretas."
+      },
+      "correta": "2"
+    },
+    "questao4": {
+      "texto": "Os vetores multidimensionais possuem quantas dimensões forem necessárias para representar a informação. Os vetores bidimensionais são conhecidos como matrizes, as quais possuem representação visual semelhante a planilhas de Excel. A seguir é apresentada uma matriz com as notas de vários alunos, armazenadas na variável \"notas\" com índices iniciando em zero, em que a primeira coluna armazena o nome do aluno e as demais armazenam suas notas. Sobre matrizes, analise as sentenças a seguir:<br><br>I- Para recuperar a nota 10,00 de Rafaela, será necessário acessar a posição [2][1]. <br>II- Os índices são números que representam unicamente as posições de um elemento dentro da matriz. <br>III- Para recuperar a nota 6,00 de Paulo, é necessário acessar a posição [1][2]. <br>IV- A execução do comando \"escreva ( notas[2][2] )\" será \"Rafaela\".<br><br>Assinale a alternativa CORRETA: <br><img src='img/lPQ8.png'>",
+      "alternativas" : {
+        "1" : "As sentenças III e IV estão corretas.",
+        "2" : "As sentenças II e IV estão corretas.",
+        "3" : "Somente a sentença II está correta.",
+        "4" : "As sentenças I e II estão corretas."
+      },
+      "correta": "4"
+    },
+    "questao5": {
+      "texto": "As linguagens de programação permitem que as estruturas de controle condicionais executem um bloco de instruções caso a condicional declarada no início da estrutura não seja atendida, esse bloco é chamado de \"senão\". Analise o algoritmo e as sentenças a seguir:<br><br><code>01 algoritmo \"consultaanobissexto\"  <br>02 var  <br>03           ano: inteiro  <br>04 inicio  <br>05          escreval (\"Digite um ano: \")  <br>06          leia (ano)  <br>07 <br>08          se ((ano mod 4 = 0) e (ano mod 100 <> 0)) ou (ano mod 400 = 0) entao <br>09                        escreval (\"O ano: \",ano,\" é bissexto\")  <br>10          senao  <br>11                        escreval (\"O ano: \",ano,\" não é bissexto\")  <br>12          fimse  <br>13 fimalgoritmo </code><br><br>I- Caso o usuário informe o ano 2012, o resultado será \"O ano: 2012 não é bissexto\". <br>II- O comando \" mod \", presente na linha 08, retorna o resto da divisão matemática. <br>III- Caso sejam retiradas as linhas 10 e 11, o algoritmo retornará que o ano é bissexto, independentemente do ano informado. <br>IV. De acordo com o algoritmo, um ano não pode ser bissexto e não bissexto ao mesmo tempo. <br><br>Assinale a alternativa CORRETA:",
+      "alternativas": {
+        "1": "As sentenças II e IV estão corretas.",
+        "2": "As sentenças III e IV estão corretas.",
+        "3": "As sentenças I e II estão corretas.",
+        "4": "As sentenças I e III estão corretas."
+      },
+      "correta": "1"
+    },
+    "questao6": {
+      "texto": "Os computadores armazenam arquivos em memórias secundárias, como disco rígido, CD, pen-drives, entre outros. Estas memórias fazem o armazenamento não volátil, logo os dados são retidos quando não estão alimentados por energia, diferente da memória RAM, que sem energia perde seu conteúdo. Sobre a utilização de arquivos em lógica de programação, analise as sentenças a seguir:<br><br>I- É possível apenas consultar, incluir e modificar dados de arquivos. <br>II- O comando \"abra\" é utilizado pelos algoritmos para abrir arquivos. <br>III- Um arquivo físico pode ser excluído do computador por meio do comando \"remove\". <br>IV- Arquivos podem ser abertos somente para leituras utilizando o modo de abertura W. <br><br>Assinale a alternativa CORRETA:",
+      "alternativas" : {
+        "1" : "As sentenças I e IV estão corretas.",
+        "2" : "As sentenças I e III estão corretas.",
+        "3" : "As sentenças II e IV estão corretas.",
+        "4" : "As sentenças II e III estão corretas."
+      },
+      "correta": "4"
+    },
+    "questao7": {
+      "texto": "O fundador da lógica formal é Aristóteles, ele determina que a validade lógica de um raciocínio depende da forma ou estrutura, e não do conteúdo. Também, fez a introdução à análise da quantificação dos enunciados e das variáveis, realizando vários estudos dos casos em que dois enunciados implicam um terceiro. Sobre os tipos de lógica, classifique V para as sentenças verdadeiras e F para as falsas: <br><br>(    ) A lógica de programação também é chamada de lógica de argumentação programacional. <br>(    ) A lógica de programação define o encadeamento lógico para o desenvolvimento de programas de computador. <br>(    ) O estudo da lógica segundo a sua estrutura ou forma é feito pela lógica matemática. <br>(    ) A lógica proposicional é utilizada para descobrir se o valor lógico de uma proposição é verdadeiro, falso ou nulo. <br><br>Assinale a alternativa que apresenta a sequência CORRETA:",
+      "alternativas": {
+        "1": "F - V - V - F.",
+        "2": "V - F - F - V.",
+        "3": "F - F - V - V.",
+        "4": "V - V - V - F."
+      },
+      "correta": "1"
+    },
+    "questao8": {
+      "texto": "As estruturas de repetição implementadas pelas linguagens de programação possibilitam a repetição de blocos de comandos. As estruturas \" para..faça \" repetem uma sequência de comandos por um determinado número de vezes. Analise a estrutura \" para..faça \" e as sentenças a seguir: <br><br><code>01 algoritmo \"Multiplos de 10\" <br>02 var <br>03         n: vetor[1..100] de inteiro <br>04         i: inteiro <br>05 <br>06 inicio <br>07         escreval (\"Os múltiplos de 10 são:\") <br>08 <br>09         para i de 1 ate 100 faca <br>10                        se (i mod 10 = 0) entao <br>11                                  escreval ( i ) <br>12                        fimse <br>13         fimpara <br>14 fimalgoritmo </code><br><br>I- A saída de dados imprimirá os número de 0 a 100, sendo que o primeiro a ser impresso será 0 e o último será 100. <br>II- A variável utilizada como contador é a \" i \". <br>III- É somado o valor 1 ao valor da variável \" i \" a cada duas repetições. <br>IV- Para exibir os múltiplos de 2, pode-se alterar a linha 10 para \" se (i mod 10 = 2) entao \". <br><br>Assinale a alternativa CORRETA:",
+      "alternativas" : {
+        "1" : "As sentenças II e IV estão corretas.",
+        "2" : "As sentenças I e III estão corretas.",
+        "3" : "As sentenças I e II estão corretas.",
+        "4" : "As sentenças III e IV estão corretas."
+      },
+      "correta": "3"
+    },
+    "questao9": {
+      "texto": "Os algoritmos tiveram origem cerca de 300 a.C. com o algoritmo de Euclides. Contudo, o conceito só foi documentado em 1936, pelo britânico Alan Turing, o pai da computação e criador da máquina de Turing, um dispositivo teórico também conhecido como máquina universal. Sobre a definição de algoritmo, assinale a alternativa CORRETA:",
+      "alternativas": {
+        "1": "É, apenas, a representação de uma solução por meio de formas gráficas.",
+        "2": "É o meio para se chegar à forma mais adequada da solução.",
+        "3": "É um termo exclusivo da área da computação que significa codificar programas de computador.",
+        "4": "É a solução de um problema que utiliza a máquina de Turing."
+      },
+      "correta": "2"
+    },
+    "questao10": {
+      "texto": "As proposições podem ser combinadas entre si e, para representar essas combinações, são utilizados os conectivos lógicos \"e\", \"ou\", \"se...então\", \"se e somente se\" ou \"não\". A finalidade dos conectivos é conectar duas ou mais proposições. Sobre conectivos lógicos assinale a alternativa CORRETA que apresenta uma proposição com conjunção:",
+      "alternativas" : {
+        "1" : "O café é preto e o leite é branco.",
+        "2" : "Se o café é preto então o leite é branco.",
+        "3" : "O café não é preto.",
+        "4" : "O café é preto ou o leite é branco."
+      },
+      "correta": "1"
+    }
+  }
+}

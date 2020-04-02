@@ -10,17 +10,12 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/scripts.js"></script>
 
     <title>Categorias - Perguntas e Repostas&copy;</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html">Perguntas & Respostas&copy;</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
-            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 </nav>
 <div class="container">
     <section>
@@ -60,31 +55,7 @@
                 </ul>
             </div>
             <div class="col-12 col-md-9">
-                <div class="list-group">
-                    <a href="prova.html?prova=dozap" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Prova do Zap</h5>
-                            <small>3 dias atrás</small>
-                        </div>
-                        <p class="mb-1">A prova do Zap é utilizada pelos orgãos federais para testar suas habilidades no Zap.</p>
-                        <small>Simulado e Gabarito disponíveis</small>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Prova do Enem 2021</h5>
-                            <small class="text-muted">6 anos atrás</small>
-                        </div>
-                        <p class="mb-1">A prova do Enem é utilizada pelos orgãos federais para ingresso no ensino superior.</p>
-                        <small class="text-muted">Gabarito disponível</small>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Prova da go4Troll eSports</h5>
-                            <small class="text-muted">Hoje</small>
-                        </div>
-                        <p class="mb-1">A prova da go4Troll eSports é utilizada para medir o QI dos membros do grupo.</p>
-                        <small class="text-muted">Simulado disponível</small>
-                    </a>
+                <div class="list-group mb-5" id="listaProvas">
                 </div>
             </div>
         </div>
@@ -102,5 +73,17 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+<script src="js/categorias.js"></script>
+<script src="js/jsonLoader.js"></script>
+
+
+<script>
+    loadJSON('provas.json', function(resposta) {
+    // Disponibiliza o JSON em uma variável
+    let json = JSON.parse(resposta);
+
+    gerarListaProvas(json);
+    });
+</script>
 </body>
 </html>

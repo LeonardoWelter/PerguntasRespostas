@@ -1,0 +1,23 @@
+{
+  "LP001" : {
+    "src": "logicaProgramacao1.json",
+    "nome" : "Lógica e Técnicas de Programação I",
+    "descricao" : "Prova que mede seus conhecimentos em Lógica e Técnicas de Programação",
+    "tags": "logica, programação, desenvolvimento, algoritmo",
+    "data" : "25/03/2020"
+  },
+  "LP002" : {
+    "src": "logicaProgramacao2.json",
+    "nome" : "Lógica e Técnicas de Programação II",
+    "descricao" : "Prova que mede seus conhecimentos em Lógica e Técnicas de Programação",
+    "tags": "logica, programação, desenvolvimento, algoritmo",
+    "data" : "26/03/2020"
+  },
+  "DR001" : {
+    "src" : "WIP",
+    "nome" : "Prova em PDF que o Dragon ainda não mandou",
+    "descricao" : "Não sei porque não recebi",
+    "tags" : "direito?",
+    "data" : "00/00/0000"
+  }
+}
