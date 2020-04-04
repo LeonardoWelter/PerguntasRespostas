@@ -18,25 +18,10 @@ function recuperarRespostas() {
     return respostas;
 }
 
-// Mesma função que a anterior, porém retorna em JSON.
-function recuperarRespostas2() {
-    let numQuestoes = document.querySelectorAll('input[type="radio"]').length / 4;
-    let respostas = [];
-
-    let i = 0;
-
-    while (i < numQuestoes) {
-        respostas.push({ [document.querySelectorAll('input[type="radio"]:checked')[i].name] : document.querySelectorAll('input[type="radio"]:checked')[i].value });
-        i++
-    }
-
-    return JSON.stringify(respostas);
-}
-
 // Função que altera a estilização das alternativas corretas.
 function marcarCorreta(nomeInput, valor) {
     let certo = "<i class='fas fa-check fa-lg mr-2'></i>";
-    let li = document.querySelectorAll("input[name='"+ nomeInput+"'][value='"+valor+"']")[0].parentNode; //document.getElementById(elemento).parentNode;
+    let li = document.querySelectorAll("input[name='" + nomeInput + "'][value='" + valor + "']")[0].parentNode;
     let label = li.parentNode;
 
     removerInputs();
@@ -50,7 +35,7 @@ function marcarCorreta(nomeInput, valor) {
 // ela realiza o chamado da função marcarCorreta() para marcar a alternativa correta.
 function marcarIncorreta(nomeInput, valor, valorCorreta) {
     let errado = "<i class='fas fa-times fa-lg mr-3'></i>";
-    let li = document.querySelectorAll("input[name='"+ nomeInput+"'][value='"+valor+"']")[0].parentNode;
+    let li = document.querySelectorAll("input[name='" + nomeInput + "'][value='" + valor + "']")[0].parentNode;
     let label = li.parentNode;
 
     label.className += ' bg-danger';
@@ -92,13 +77,13 @@ function exibirGabarito(gabarito, marcadas, totalQuestoes) {
 
 
     for (let numQuestoes = 0; numQuestoes < totalQuestoes; numQuestoes++) {
-        tdQuestao.innerText = numQuestoes+1;
-        tdResposta.innerText = letras[marcadas[numQuestoes][1]-1].toUpperCase();
+        tdQuestao.innerText = numQuestoes + 1;
+        tdResposta.innerText = letras[marcadas[numQuestoes][1] - 1].toUpperCase();
         if (marcadas[numQuestoes][1] == gabarito[numQuestoes][1]) {
             tdResposta.className = 'bg-success';
             acertos += 1;
         } else {
-            tdResposta.innerText += ' (' + letras[gabarito[numQuestoes][1]-1].toUpperCase() + ')';
+            tdResposta.innerText += ' (' + letras[gabarito[numQuestoes][1] - 1].toUpperCase() + ')';
             tdResposta.className = 'bg-danger';
             erros += 1;
         }
@@ -128,7 +113,7 @@ function corrigirProva() {
             console.log(json[questoes][0] + ' incorreta');
             marcarIncorreta(questaoAtual[questoes], respostas[json[questoes][0]], json[questoes][1].correta);
         }
-        gabarito[json[questoes][0]] =  json[questoes][1].correta;
+        gabarito[json[questoes][0]] = json[questoes][1].correta;
     }
 
     exibirGabarito(gabarito, respostas, totalQuestoes);
@@ -180,7 +165,7 @@ function gerarProva(json) {
         div2.className = 'card-body';
 
         h5.className = 'card-title';
-        h5.innerHTML = 'Questão ' + (j+1);
+        h5.innerHTML = 'Questão ' + (j + 1);
 
         p.className = 'card-text text-justify';
         p.innerHTML = questoes[j][1].texto;
@@ -192,14 +177,14 @@ function gerarProva(json) {
 
             let values = Object.keys(questoes[j][1].alternativas);
 
-            label.id = 'lblQ' + (j+1) + 'A' + (i+1);
-            label.htmlFor = 'q' + (j+1) + 'a' + (i+1);
+            label.id = 'lblQ' + (j + 1) + 'A' + (i + 1);
+            label.htmlFor = 'q' + (j + 1) + 'a' + (i + 1);
             if (i == 4) {
                 label.className = 'semBorda';
             }
-            li.id = 'liQ' + (j+1) + 'A' + (i+1);
+            li.id = 'liQ' + (j + 1) + 'A' + (i + 1);
             li.className = 'list-group-item text-justify';
-            input.id = 'q' + (j+1) + 'a' + (i+1);
+            input.id = 'q' + (j + 1) + 'a' + (i + 1);
             input.value = values[i];
             input.name = questoes[j][0];
             input.type = 'radio';
