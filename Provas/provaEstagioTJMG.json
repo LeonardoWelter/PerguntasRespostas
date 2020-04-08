@@ -1,0 +1,607 @@
+{
+  "nome": "Processo Seletivo Estagiários Tribunal de Justiça de Minas Gerais",
+  "tags": "lógica, programação, desenvolvimento, algoritmo",
+  "data": "2019",
+  "questoes": {
+    "questao1": {
+      "texto": "<b>Leia o TEXTO I para responder as questões 1 a 10.<br>TEXTO I</b><br><br><b>Brasileiro, homem do amanhã</b> <br><br>Há, em nosso povo, duas constantes que nos induzem a sustentar que o Brasil é o único país brasileiro de todo o mundo. Brasileiro até demais.  <br><br>Colunas da brasilidade, as duas colunas são: a capacidade de dar um jeito; a capacidade de adiar.  <br><br>A primeira é, ainda, escassamente desconhecida, e nada compreendida, no exterior; a segunda, no entanto, já anda bastante divulgada lá fora, sem que, direta ou sistematicamente, o corpo diplomático contribua para isso. <br><br>Aquilo que Oscar Wilde e Mark Twain diziam apenas por humorismo (“Nunca se fazer amanhã aquilo que se pode fazer depois de amanhã”) não é, no Brasil, uma deliberada norma de conduta, uma diretriz fundamental. Não, é mais, é bem mais forte do que qualquer princípio da vontade: é um instinto inelutável, uma força espontânea da estranha e surpreendente raça brasileira. Para o brasileiro, os atos fundamentais da existência são: nascimento, reprodução, procrastinação e morte (esta última, se possível, também adiada). <br><br>Adiamos em virtude de um verdadeiro e inevitável estímulo inibitório, do mesmo modo que protegemos os olhos com a mão, ao surgir, na nossa frente, um foco luminoso intenso. A coisa deu em reflexo condicionado: proposto qualquer problema a um brasileiro, ele reage, de pronto, com as palavras: logo à tarde, só à noite, amanhã, segunda-feira; depois do Carnaval; no ano que vem. <br><br>Adiamos tudo: o bem e o mal, o bom e o mau, que não se confundem, mas, tantas vezes, se desemparelham. Adiamos o trabalho, o encontro, o almoço, o telefonema, o dentista (o dentista nos adia), a conversa séria, o pagamento do imposto de renda, as férias, a reforma agrária, o seguro de vida, o exame médico, a visita de pêsames, o conserto do automóvel, o concerto de Beethoven, o túnel para Niterói, a festa de aniversário da criança, as relações com a China, tudo. Até o amor. Só a morte e a promissória são, mais ou menos, pontuais entre nós. Mesmo assim, há remédio para a promissória: o adiamento bi ou trimestral das reformas, uma instituição sacrossanta no Brasil. <br><br>Quanto à morte, não devem ser esquecidos dois poemas típicos do Romantismo: na “Canção do Exílio”, Gonçalves Dias roga a Deus não permitir que ele morra sem que volte para lá, isto é, para cá. Já Álvares de Azevedo tem aquele poema famoso, cujo refrão é sintomaticamente brasileiro: “Se eu morresse amanhã...”. Como se vê, nem os românticos aceitavam morrer hoje, postulando a Deus prazos mais confortáveis. <br><br>Sim, adiamos por força de um incoercível destino nacional, do mesmo modo que, por obra do fado, o francês poupa dinheiro, o inglês confia no Times, o português adora bacalhau, o alemão trabalha com furor disciplinado, o espanhol se excita com a morte, o japonês esconde o pensamento, o americano escolhe a gravata sempre mais colorida. <br><br>O brasileiro adia; logo existe. <br><br>A divulgação dessa nossa capacidade autóctone para a incessante delonga transpõe as fronteiras e o Atlântico. A verdade é que já está nos manuais. Ainda há pouco, lendo um livro francês sobre o Brasil, incluído numa coleção quase didática de viagens, encontrei, no fim do volume, algumas informações essenciais sobre nós e a nossa terra. Entre endereços de embaixadas e consulados, estatísticas, indicações culinárias, o autor intercalou o seguinte tópico: <br><br>DES MOTS: Hier = ontem; Aujourd’hui = hoje; Demain = amanhã. <br><br>Le seul important est le derniern = A única palavra importante é a última. <br><br>Ora, esse francês astuto agarrou-nos pela perna. O resto eu adio para a semana que vem.  <br><br> <h5>Questão 1</h5> “O Brasil é o único país brasileiro de todo o mundo”. <br><br>Considerando os argumentos apresentados pelo autor, com essa expressão, ele quer dizer que o Brasil:",
+      "alternativas": {
+        "1": "Difere-se por seu bom humor incomum.",
+        "2": "Possui características peculiares e únicas.",
+        "3": "Apresenta uma moderna e extravagante forma de vida.",
+        "4": "Demonstra rara originalidade em relação aos demais países."
+      },
+      "correta": "2"
+    },
+    "questao2": {
+      "texto": "A expressão destacada em: “... adiamos por força de um incoercível destino nacional, do mesmo modo que, por obra do fado, o francês poupa dinheiro, o inglês confia no Times, o português adora bacalhau, o alemão trabalha com furor disciplinado...”, PODE ser substituída por:",
+      "alternativas": {
+        "1": "hábito.",
+        "2": "ventura.",
+        "3": "hipótese.",
+        "4": "obra do destino."
+      },
+      "correta": "4"
+    },
+    "questao3": {
+      "texto": "O autor NÃO traduz a marca de brasilidade, apresentada no texto, na expressão:",
+      "alternativas": {
+        "1": "“O brasileiro adia; logo existe.”",
+        "2": "“A única palavra importante é a última.”",
+        "3": "“O resto eu adio para a semana que vem.”",
+        "4": "“...adiamos por força de um incoercível destino nacional.”"
+      },
+      "correta": "2"
+    },
+    "questao4": {
+      "texto": "De acordo com os argumentos apresentados no 2º parágrafo do texto, é CORRETO concluir que:",
+      "alternativas": {
+        "1": "Ao corpo diplomático, caberia divulgar todas as características do povo brasileiro.",
+        "2": "Tanto adiar quanto “dar um jeito” funcionam como símbolos de brasilidade no exterior.",
+        "3": "O fato de adiarmos quase tudo já é bem conhecido, ao contrário de nossa capacidade de “dar um jeito”.",
+        "4": "O fato de darmos um jeitinho já é bem conhecido, ao contrário de nossa capacidade de adiarmos quase tudo."
+      },
+      "correta": "3"
+    },
+    "questao5": {
+      "texto": "“Para o brasileiro, os atos fundamentais da existência são: nascimento, reprodução, procrastinação e morte (esta última, se possível, também adiada).” O termo procrastinação NÃO PODE ser substituído por:",
+      "alternativas": {
+        "1": "Delonga.",
+        "2": "Protelação.",
+        "3": "Postergação.",
+        "4": "Manipulação."
+      },
+      "correta": "4"
+    },
+    "questao6": {
+      "texto": "Em: “Adiamos em virtude de um verdadeiro e inevitável estímulo inibitório, do mesmo modo que protegemos os olhos com a mão ao surgir na nossa frente um foco luminoso intenso”, a analogia feita pelo autor remete à ideia de que adiamos de uma maneira ____________.",
+      "alternativas": {
+        "1": "racional e cuidadosa.",
+        "2": "prudente e preventiva.",
+        "3": "involuntária e automática.",
+        "4": "premeditada e consciente."
+      },
+      "correta": "3"
+    },
+    "questao7": {
+      "texto": "“A divulgação dessa nossa capacidade <b>autóctone</b> para a incessante <b>delonga</b> transpõe as fronteiras e o Atlântico. ” Conforme as informações fornecidas pelo autor, no texto, os termos grifados, respectivamente, apresentam o mesmo sentido que:",
+      "alternativas": {
+        "1": "nativa – adiamento.",
+        "2": "pátria – jeito de ser.",
+        "3": "espontânea – protelação.",
+        "4": "bem-humorada – demora."
+      },
+      "correta": "1"
+    },
+    "questao8": {
+      "texto": "“<b>A primeira</b> é, ainda, escassamente desconhecida, e nada compreendida, no exterior; <b>a segunda</b>, no entanto, já anda bastante divulgada lá fora, sem que, direta ou sistematicamente, o corpo diplomático contribua para isso.” O CORRETO emprego de pronome demonstrativo, em substituição às expressões grifadas, seria respectivamente:",
+      "alternativas": {
+        "1": "esta/essa.",
+        "2": "essa/aquela.",
+        "3": "aquela/esta.",
+        "4": "aquela/essa."
+      },
+      "correta": "3"
+    },
+    "questao9": {
+      "texto": "Nas expressões “o conserto do automóvel” e “o concerto de Beethoven”, há a presença de palavras homônimas, ou seja, palavras com a mesma fonética, pronunciadas de forma igual, mas que apresentam significados e escritas diferentes. Analise as proposições a seguir, quanto ao emprego correto das palavras homônimas grifadas: <br><br> I- O funcionário que <b>traz</b> a documentação todas as manhãs sempre me pede um <b>concelho</b>. <br>II- A lei que reserva um dos acentos do transporte público a idosos e deficientes só existe porque o brasileiro, via de regra, não <b>sede</b> espontaneamente seu lugar a uma pessoa necessitada. <br>III- Com base no novo <b>senso</b>, será possível verificar se o acesso dos jovens à Universidade é ainda <b>incipiente</b>. <br>IV- A <b>sessão</b> terá como objetivo aprovar ou não a nova lei para <b>cessão</b> de órgãos para transplantes e estudo. <br><br>Estão CORRETOS os empregos nos itens:",
+      "alternativas": {
+        "1": "I, II e III apenas.",
+        "2": "II e IV apenas.",
+        "3": "I e III apenas.",
+        "4": "III e IV apenas."
+      },
+      "correta": "4"
+    },
+    "questao10": {
+      "texto": "O autor usa adjetivos e advérbios para se expressar, como em: “Adiamos tudo: o bem e o mal, o bom e o mau”. Analise esse uso nas assertivas, a seguir: <br><br>I- Comportou-se mal diante das autoridades. <br>II- O mau uso dos eletrônicos provoca rugas no pescoço. <br>III- Os documentos estavam mau dispostos sobre a mesa. <br>IV- Houve mal entendimento sobre as causas daqueles fenômenos.<br><br>Estão CORRETOS os empregos nos itens:",
+      "alternativas": {
+        "1": "I e II apenas.",
+        "2": "II e III apenas.",
+        "3": "I e IV apenas.",
+        "4": "III e IV apenas."
+      },
+      "correta": "1"
+    },
+    "questao11": {
+      "texto": "Analise os trechos, a seguir:<br><br>I- “....duas constantes que nos induzem a sustentar  (...)”.<br>II- “...o espanhol se excita com a morte...”<br>III- “....o bom e o mau, que não se confundem...”<br>IV- “...esse francês astuto agarrou-nos pela perna.”  Faculta-se o uso de próclise somente nos itens:",
+      "alternativas": {
+        "1": "I e III apenas.",
+        "2": "I e IV apenas.",
+        "3": "II e III apenas.",
+        "4": "II e IV apenas."
+      },
+      "correta": "4"
+    },
+    "questao12": {
+      "texto": "Considere o trecho: “Adiamos em virtude de um  verdadeiro e inevitável estímulo inibitório, do mesmo  modo que protegemos <b>os olhos</b> com a mão...”  O pronome está adequadamente colocado e substitui, de  acordo com a norma culta, o termo em destaque, na  alternativa:",
+      "alternativas": {
+        "1": "“Adiamos em virtude de um verdadeiro e  inevitável estímulo inibitório, do mesmo modo  que protegemos-<b>lhes</b> com a mão...”",
+        "2": "“Adiamos em virtude de um verdadeiro e  inevitável estímulo inibitório, do mesmo modo  que protegemo-<b>los</b> com a mão...”",
+        "3": "“Adiamos em virtude de um verdadeiro e  inevitável estímulo inibitório, do mesmo modo  que <b>os</b> protegemos com a mão...”",
+        "4": "“Adiamos em virtude de um verdadeiro e  inevitável estímulo inibitório, do mesmo modo  que <b>lhes</b> protegemos com a mão...”"
+      },
+      "correta": "3"
+    },
+    "questao13": {
+      "texto": "“Ainda <b>há</b> pouco, lendo um livro francês sobre o Brasil,  incluído numa coleção quase didática de viagens,  encontrei, no fim do volume, algumas informações  essenciais sobre nós e a nossa terra.”  O emprego do termo destacado, como no trecho  apresentado, está CORRETO somente em:",
+      "alternativas": {
+        "1": "Quando, <b>há</b> uma semana, o problema foi  divulgado, os funcionários foram solidários.",
+        "2": "Somente <b>há</b> algumas quadras do local  delimitado,  encontram-se  os  destinos  pretendidos.",
+        "3": "O grave acidente ocorrido <b>há</b> quase cinco km  da avenida principal, parou todo o trânsito.",
+        "4": "Estaremos, amanhã, <b>há</b> um mês do prazo de  entrega dos solicitados relatórios anuais da  empresa."
+      },
+      "correta": "1"
+    },
+    "questao14": {
+      "texto": "Em: “O brasileiro adia; <b>logo existe</b>.”, a expressão em  destaque expressa ideia:",
+      "alternativas": {
+        "1": "Aditiva.",
+        "2": "Conclusiva.",
+        "3": "Explicativa.",
+        "4": "Adversativa."
+      },
+      "correta": "2"
+    },
+    "questao15": {
+      "texto": "<b>Leia o TEXTO II, para responder as questões 15 a 20.<br>TEXTO II</b><br><br><b>O Jeitinho Brasileiro</b><br><br>O jeitinho brasileiro é uma forma de corrupção?<br><br>Se a regra transgredida não causa prejuízo,  temos o “jeitinho” positivo e, direi eu, ético. Por  exemplo: estou tranquilo na fila, chega uma senhora que  parece preocupada, precisando pagar sua conta que  vence aquele dia e pede para passar na frente. Não há o  que reclamar dessa forma de “jeitinho”, que  permaneceria universal porque poderia ocorrer na  maioria dos países conhecidos, exceto talvez na  Alemanha ou na Suíça, onde um trem sai às 14:57! E sai  mesmo: eu fiz o teste. A questão sociológica que o  “jeitinho” apresenta, porém, é outra. Ela mostra uma  relação ruim com a lei geral, com a norma desenhada  para todos os cidadãos, com o pressuposto que essa  regra universal produz legalidade e cidadania! Eu pago  meus impostos integralmente e por isso posso exigir dos  funcionários públicos que façam por mim e pelo país.  Tenho o direito — como cidadão — de tomar conta da  Biblioteca Nacional, que também é minha. Agora, se eu  dou um jeito nos meus impostos porque o delegado da  receita federal é meu amigo ou parente e faz a tal “vista  grossa”, aí temos o “jeitinho” virando corrupção. (...)<br><br>O que nos enlouquece hoje no Brasil não é a  existência do jeitinho como ponte negativa entre a lei e  a pessoa especial que dela livra. É a persistência de um  estilo de lidar com lei, marcadamente aristocrático, que  de certa forma induz o chefe, o diretor, o dono, o patrão,  o governador, o presidente, a passar por cima da lei  porque ele a “empossa”. O cargo público ainda hoje, e  apesar  dos  avanços,  ainda  é  concebido  aristocraticamente,  não  burocraticamente  e  patriarcalmente como o foi nos velhos tempos de Dom  Casmurro (...)<br><br><h5>QUESTÃO 15</h5><br>Para responder à pergunta “O jeitinho brasileiro é uma  forma de corrupção?”, o entrevistado, Roberto da  Matta:<br><br>I- Expõe seus conceitos de “jeitinho”.<br>II- Questiona os vários conceitos de “corrupção”.<br>III- Argumenta contra os preconceitos da marca de  brasilidade.<br>IV- Fundamenta-se nos pressupostos sociais que  envolvem o “jeitinho”.  Estão CORRETAS as afirmativas:",
+      "alternativas": {
+        "1": "I e II apenas.",
+        "2": "II e III apenas.",
+        "3": "I e IV apenas.",
+        "4": "III e IV apenas."
+      },
+      "correta": "3"
+    },
+    "questao16": {
+      "texto": "Quando o entrevistado fala de uma relação ruim com a  lei geral, ele se REFERE:",
+      "alternativas": {
+        "1": "A seus interesses puramente aristocráticos.",
+        "2": "Ao fato da lei não ter sido criada para todos os  cidadãos.",
+        "3": "À existência do jeitinho como ponte entre a lei  e a pessoa especial que dela livra.",
+        "4": "Ao fato do “jeitinho” contrariar a legislação  maior e os direitos e deveres do cidadão."
+      },
+      "correta": "4"
+    },
+    "questao17": {
+      "texto": "Em vários trechos do texto, o entrevistado faz uso de  palavra com função de retomar informação antecedente,  como é o caso do pronome relativo <b>que</b>, empregado em:",
+      "alternativas": {
+        "1": "...“estou tranquilo na fila, chega uma senhora  <b>que</b> parece preocupada...”.",
+        "2": "...“com o pressuposto <b>que</b> essa regra universal  produz legalidade e cidadania!”.",
+        "3": "...“por isso, posso exigir dos funcionários  públicos <b>que</b> façam por mim e pelo país.”",
+        "4": "...“O <b>que</b> nos enlouquece hoje no Brasil não é a  existência do jeitinho como ponte negativa.”"
+      },
+      "correta": "1"
+    },
+    "questao18": {
+      "texto": "Em: “Tenho o direito — como cidadão — de tomar  conta da Biblioteca Nacional, que também é minha.  <b>Agora</b>, se eu dou um jeito nos meus impostos porque o  delegado da receita federal é meu amigo ou parente e  faz a tal “vista grossa”, aí temos o “jeitinho” virando  corrupção.”, a palavra destacada exprime uma  circunstância:",
+      "alternativas": {
+        "1": "Temporal.",
+        "2": "Explicativa.",
+        "3": "Concessiva.",
+        "4": "Adversativa."
+      },
+      "correta": "4"
+    },
+    "questao19": {
+      "texto": "Assinale a alternativa em que as palavras estão  acentuadas CORRETAMENTE, segundo as mesmas  regras estabelecidas para a acentuação dos vocábulos  “ético” e “existência”, respectivamente:",
+      "alternativas": {
+        "1": "Única – país.",
+        "2": "Áreas – idéia.",
+        "3": "Êxito – exíguo.",
+        "4": "Rúbrica – óbvia."
+      },
+      "correta": "3"
+    },
+    "questao20": {
+      "texto": "“Ela mostra uma relação ruim com a lei geral, com a  norma desenhada para todos os <b>cidadãos</b>, com o  pressuposto que essa regra universal produz legalidade  e cidadania!” Nesse trecho é usada a correta flexão no  plural do substantivo <b>cidadão</b>.  Assinale a alternativa cuja flexão no plural está  INCORRETA:",
+      "alternativas": {
+        "1": "Guardião – guardiães.",
+        "2": "Tabelião – tabeliões.",
+        "3": "Corrimão – corrimões.",
+        "4": "Cirurgião – cirurgiães."
+      },
+      "correta": "2"
+    },
+    "questao21": {
+      "texto": "<b>Leia o TEXTO III para responder as questões 21 a  25.  <br>TEXTO III</b>  <br><br><b>'Jeitinho brasileiro': 82% acham que maioria  pretende tirar vantagem, diz pesquisa</b><br><br>Pesquisa da Confederação Nacional da  Indústria (CNI), feita entre 17 e 21 de setembro de 2012,  e completada com dados de 2014 mostra que a  percepção dos entrevistados em relação à forma de agir  do brasileiro reflete o jeito com que tratamos as pessoas,  mesmo as mais próximas do nosso círculo afetivo  (família, amigo, vizinho ou colega de trabalho): 82%  acham que a maioria age querendo tirar vantagem,  enquanto só 16% dos entrevistados acham que as  pessoas agem de maneira correta.  <br><br>Há certas imagens sobre o comportamento do  brasileiro que permeiam as percepções das pessoas nas  suas relações sociais. A ideia de que o brasileiro sempre  burla normas e determinações para obter o que almeja -  e essa é uma definição do jeitinho - é recorrente. Para a  grande maioria dos brasileiros, a busca de atalhos,  soluções facilitadas ou vantagens fazem parte do  cotidiano das pessoas. Quando o assunto é confiança, o  número também é alto: 62% dos brasileiros não têm  nenhuma (29%) ou quase nenhuma confiança (33%) na  maioria das pessoas. Os otimistas, que confiam muito  no próximo, são apenas 6%, e os que disseram ter  alguma confiança são 31%.  <br><br>Quanto mais próximo é o círculo social, maior  é a confiança. A pergunta sobre familiares teve 93% de  respostas positivas, onde os entrevistados disseram  depositar muita (73%) ou alguma confiança em  membros da família (20%). Logo depois, vêm os  amigos, que inspiram muita confiança em apenas 18%  das pessoas. Os que disseram ter alguma confiança  foram 48%.  <br><br>A pesquisa aponta ainda que o Nordeste é a  região onde as pessoas mais acreditam estar sendo  passadas para trás. São 89% os entrevistados que acham  que os outros querem tirar vantagem e só 9% acreditam  que as pessoas agem de maneira correta. Em seguida,  vem o Sul, com 85% de grau de desconfiança, seguido  pelo Sudeste (81%) e Norte/Centro-Oeste (71%).  <br><br>De acordo com a CNI, que entrevistou 2.002  brasileiros de 143 municípios, mais da metade dos  brasileiros desconfia dos moradores da porta ao lado.  Para Rachel Meneguello, o alto nível de desconfiança  mesmo entre pessoas próximas aponta para a fragilidade  das relações sociais: “Em contextos em que mesmo  entre os grupos mais próximos a relação é frágil,  estamos diante de situações em que o tecido social está  esgarçado”.  <br><br>A última categoria analisada foi a de colegas de  trabalho ou escola. Nesta faixa, 44% das pessoas  confiam muito (9%) ou têm alguma confiança (35%)  nas pessoas à sua volta. A desconfiança, aqui, chega a  47%, sendo 22% os que confiam quase nada e 25% os  que não têm nenhuma confiança nesse grupo.  <br><br>No grupo dos que recebem até um salário-  mínimo, a desconfiança aumenta, com 83% dos  entrevistados acreditando que a maioria das pessoas  quer tirar vantagem. O nível só diminui na categoria dos  que ganham de 5 a 10 salários-mínimos, mesmo assim  chega aos 77%. Sobre a percepção que o brasileiro tem  da sociedade, o nível de desconfiança é maior entre os  mais pobres e os mais ricos. Na faixa de quem ganha um  salário-mínimo, 67% dos entrevistados disseram ter  pouca (26%) ou nenhuma confiança (41%) na maioria  das pessoas. No grupo que ganha mais de 10 salários-  mínimos, 68% apontaram desconfiança absoluta (39%)  ou muita desconfiança (29%) na maioria das pessoas.  <br><br>“O que tem é essa visão de que o brasileiro  sempre quer tirar vantagem, ele passa pelo acostamento,  fura fila, não devolve o troco, cola na prova, e isso afeta  essa avaliação. As pessoas podem defender uma  sociedade sem corrupção, mas, nessas pequenas coisas,  elas não têm essa ética, e aí você começa a perder  confiança. É uma confiança desconfiada” - conta  Renato da Fonseca, coordenador da pesquisa.  <br><br>Entrevistados com nível superior são os que  mais confiam nos outros. Mesmo assim, são apenas  19% os que acreditam que as pessoas agem de forma  correta e 80% os que acreditam que elas querem tirar  vantagem.<br><br>  <b>QUESTÃO 21</b><br><br>  Considere as conclusões obtidas a partir dos dados  fornecidos na pesquisa da Confederação Nacional da  Indústria (CNI):  <br><br>I- A relação de proximidade entre os vizinhos  assegura um baixo nível de desconfiança.  <br>II- Os mais ricos têm uma desconfiança muito  maior das pessoas do que os mais pobres.  <br>III- Menos da metade dos entrevistados desconfia  dos colegas de trabalho ou de escola.  <br>IV- A percepção da forma de agir do brasileiro tem  relação com o nível de escolaridade dos  entrevistados.  <br><br>Estão CORRETAS as conclusões apresentadas em:",
+      "alternativas": {
+        "1": "I e II apenas.",
+        "2": "I e III apenas.",
+        "3": "III e IV apenas.",
+        "4": "II, III e IV apenas."
+      },
+      "correta": "3"
+    },
+    "questao22": {
+      "texto": "Assinale  a  alternativa  que  apresenta,  CORRETAMENTE, linguagem coloquial:",
+      "alternativas": {
+        "1": "“Vivemos em uma sociedade dividida entre  malandros e manés?”",
+        "2": "“A ideia de que o brasileiro sempre burla  normas e determinações...”",
+        "3": "“...estamos diante de situações em que o tecido  social está esgarçado.”",
+        "4": "“O que tem é essa visão de que o brasileiro  sempre quer tirar vantagem.”;"
+      },
+      "correta": "1"
+    },
+    "questao23": {
+      "texto": "No 4o parágrafo do texto, em: “<b>Os</b> que disseram ter  alguma confiança foram 48%.”, o termo grifado  REFERE-SE a:",
+      "alternativas": {
+        "1": "Amigos.",
+        "2": "Familiares.",
+        "3": "Pesquisadores.",
+        "4": "Entrevistados."
+      },
+      "correta": "4"
+    },
+    "questao24": {
+      "texto": "Assinale a alternativa que apresenta o CORRETO  emprego de crase, como em: “A percepção dos  entrevistados em relação à forma de agir do brasileiro  reflete o jeito com que tratamos as pessoas”",
+      "alternativas": {
+        "1": "Tais informações são iguais às que recebi do  setor de marketing.",
+        "2": "Faltou à todas as reuniões e recusou-se à  obedecer as decisões da assembleia.",
+        "3": "Expunha-se às adversidades, porque as ordens  às quais se opunha eram rigorosas e  destinavam-se as funcionárias daquele setor.",
+        "4": "Expunha-se às adversidades, porque as ordens  às quais se opunha eram rigorosas e  destinavam-se as funcionárias daquele setor."
+      },
+      "correta": "1"
+    },
+    "questao25": {
+      "texto": "Assinale a alternativa em que o verbo destacado pode  ser flexionado no singular ou no plural, sem alteração  da frase:",
+      "alternativas": {
+        "1": "“...mais da metade dos brasileiros <b>desconfia</b>  dos moradores da porta ao lado.”",
+        "2": "“Na faixa de quem ganha um salário-mínimo,  67% dos entrevistados <b>disseram</b> ter pouca ou  nenhuma confiança (26%)...”",
+        "3": "62% dos brasileiros não <b>têm</b> nenhuma (29%)  ou quase nenhuma confiança (33%) na maioria  das pessoas (26%).",
+        "4": "“Para a grande maioria dos brasileiros, a busca  de atalhos, soluções facilitadas ou vantagens  <b>fazem</b> parte do cotidiano das pessoas.”"
+      },
+      "correta": "1"
+    },
+    "questao26": {
+      "texto": "<b>Leia o TEXTO IV para responder as questões 26 a  30.  <br>TEXTO IV</b>    <br><br><b>Como dar um jeito no jeitinho brasileiro?</b>    <br><br>  \"O jeito, ou o jeitinho brasileiro, é a imposição  do conveniente sobre o certo\". (...) Sua versatilidade  abrange um sem-número de situações: são os juros  embutidos no valor da prestação \"fixa\"; é o \"dar um por  fora\"; é matar a avó pela quinta vez para justificar a  ausência a uma prova, na escola. Mas o jeitinho é  também pedir a um médico amigo para atender uma  pessoa carente ou para fazer uma cirurgia pela  Previdência; é o revezamento dos vizinhos para socorrer  uma pessoa doente; é conseguir um emprego para um  pai desempregado.  <br><br>  O dilema está lançado! O que dizer, então, do  jeitinho? Podemos fazer uso dele para resolver as  questões do dia a dia? Será que todo jeito é  desmoralizante, ilegal, burlador, inconveniente? Ou  será que ele também pode ser criativo, solidário,  benevolente? [...] Quando se fala em jeito ou jeitinho  brasileiro, a primeira coisa em que pensamos é  esperteza, suborno, ambição. Embora essa não seja a  única maneira de definir o jeito brasileiro, o lado  negativo dessa prática tão disseminada em nossa  sociedade é o que mais se evidencia nos meios de  comunicação. O jeitinho é quase um código secreto de  relacionamento. Basta apenas que algo dê errado ou  tarde em solucionar para pensarmos em como \"dar a  volta\" e, assim, abreviar seu desfecho. Ele revela o  desejo do ser humano de não se prender às normas, mas  sim de superá-las, subjugá-las. Suspende-se  temporariamente a lei, cria-se a exceção e depois tudo  volta ao normal. (...)  <br><br>  O brasileiro seria, então, um anarquista, um  fora-da-lei? Não. O brasileiro não nega a existência da  lei, o que ele nega é a sua aplicação naquele momento.  Simples assim. Justificamo-nos com todos os rigores da  razão: se podemos pagar menos imposto de renda a um  governo que não retribui adequadamente em benefícios  sociais para seus contribuintes, por que fazê-lo? Por que  pagar uma multa de trânsito – altíssima – se podemos  dar um jeito de cancelá-la? (...)  <br><br>  Em suma, o descaso generalizado das  autoridades públicas quanto às reais necessidades do  povo gera o “salve-se quem puder”, que por sua vez  alimenta o jeito e incentiva a transgressão das normas.  Desta à corrupção é apenas um passo. Tão logo se  estabeleça, a corrupção generalizada acolhe a  impunidade. E assim fecha-se o círculo.  <br><br>    <h5>QUESTÃO 26</h5>  <br><br>    É CORRETO afirmar que os argumentos apresentados  pelo autor do Texto IV objetivam, no geral:",
+      "alternativas": {
+        "1": "Criticar como ocorre a corrupção no Brasil.",
+        "2": "Contrapor conceitos acerca do jeitinho  brasileiro.",
+        "3": "Apresentar características e justificar o jeitinho  brasileiro.",
+        "4": "Apresentar soluções para o problema do  jeitinho brasileiro."
+      },
+      "correta": "3"
+    },
+    "questao27": {
+      "texto": "“<b>Quando se fala em jeito ou jeitinho brasileiro</b>, a  primeira coisa em que pensamos é esperteza, suborno,  ambição.”  Na oração destacada, o sujeito CLASSIFICA-SE  como:",
+      "alternativas": {
+        "1": "Oculto.",
+        "2": "Simples.",
+        "3": "Inexistente.",
+        "4": "Indeterminado."
+      },
+      "correta": "4"
+    },
+    "questao28": {
+      "texto": "Assinale o segmento em que NÃO houve uso de  palavra/expressão em sentido figurado:",
+      "alternativas": {
+        "1": "“Tão logo se estabeleça, a corrupção  generalizada acolhe a impunidade.”",
+        "2": "“...que por sua vez alimenta o jeito e incentiva  a transgressão das normas.”",
+        "3": "“...o descaso generalizado das autoridades  públicas quanto às reais necessidades do povo  gera o ‘salve-se quem puder’.”",
+        "4": "“...o jeitinho é também pedir a um médico  amigo para atender uma pessoa carente ou para  fazer uma cirurgia pela Previdência.”"
+      },
+      "correta": "4"
+    },
+    "questao29": {
+      "texto": "“...se podemos pagar menos imposto de renda a um  governo que não retribui adequadamente em benefícios  sociais para seus contribuintes, <b>por que</b> fazê-lo?”<br><br>Na Língua Portuguesa, são usadas 04 diferentes formas  dos “porquês”, de acordo com o contexto semântico e  sintático.<br><br>Assinale a alternativa INCORRETA quanto ao seu  emprego:",
+      "alternativas": {
+        "1": "Ninguém informou o porquê da reunião.",
+        "2": "Você não apresentou o resultado, por que?",
+        "3": "Não revelou o motivo por que não foi ao  trabalho.",
+        "4": "Porque houve um engarrafamento, chegou  atrasado."
+      },
+      "correta": "2"
+    },
+    "questao30": {
+      "texto": "Verifica-se no texto o emprego dos vocábulos <b>mas</b> e  <b>mais</b>, em diferentes contextos: “<b>Mas</b> o jeitinho é  também pedir a um médico amigo para atender uma  pessoa carente ou para fazer uma cirurgia pela  Previdência;”; “...o lado negativo dessa prática tão  disseminada em nossa sociedade é o que <b>mais<b> se  evidencia nos meios de comunicação.”<br><br>Assinale a alternativa que apresenta ERRO no emprego  desses vocábulos:",
+      "alternativas": {
+        "1": "Sinto muito, <b>mas</b> esse problema não é <b>mais</b> da  minha alçada.",
+        "2": "A natureza é nossa <b>mais</b> fiel aliada, <b>mas</b> os  homens não a respeitam.",
+        "3": "Está <b>mais</b> do que evidente a fragilidade das  provas, <b>mais</b> ainda assim o réu foi condenado.",
+        "4": "Chegaram fora do horário estabelecido. <b>Mais</b>  ainda, não trouxeram o material, <b>mas</b> puderam  entrar."
+      },
+      "correta": "3"
+    },
+    "questao31": {
+      "texto": "Na fase postulatória, é CORRETO afirmar que:",
+      "alternativas": {
+        "1": "A opção do autor pela realização de audiência  de conciliação ou de mediação é determinante  para sua realização, independentemente da  vontade da parte ré.",
+        "2": "O juiz, antes de indeferir a petição inicial,  determinará que o autor, no prazo de 5 (cinco)  dias, a emende ou a complete, indicando com  precisão o que deve ser corrigido ou  completado.",
+        "3": "A formulação do pedido genérico é defeso.",
+        "4": "O juiz conhecerá do posterior quando não  acolher o anterior, no pedido em ordem  alternativa."
+      },
+      "correta": "1"
+    },
+    "questao32": {
+      "texto": "São da competência do Juizado Especial da Fazenda  Pública:",
+      "alternativas": {
+        "1": "As ações de mandado de segurança, de  desapropriação, de divisão e demarcação  populares, por improbidade administrativa,  execuções fiscais e as demandas sobre direitos  ou interesses difusos e coletivos.",
+        "2": "As causas sobre bens imóveis dos Estados,  Distrito Federal, Territórios e Municípios,  autarquias e fundações públicas a eles  vinculadas.",
+        "3": "As causas que tenham como objeto a  impugnação da pena de demissão imposta a  servidores públicos civis ou sanções  disciplinares aplicadas a militares.",
+        "4": "As causas cíveis de interesse dos Estados, do  Distrito Federal, dos Territórios e dos  Municípios, até o valor de 60 (sessenta) salários  mínimos."
+      },
+      "correta": "4"
+    },
+    "questao33": {
+      "texto": "Está de acordo com o rol de direitos fundamentais  descrito no art. 5o da Constituição da República.",
+      "alternativas": {
+        "1": "A prática da tortura é crime inafiançável,  imprescritível e insuscetível de graça ou anistia.",
+        "2": "A liberdade de manifestação do pensamento é  garantida pela vedação a toda e qualquer  censura.",
+        "3": "A casa é asilo inviolável do indivíduo, ninguém  nela podendo penetrar sem consentimento do  morador, salvo por determinação judicial.",
+        "4": "É dever do Estado promover, na forma da lei, a  defesa do consumidor."
+      },
+      "correta": "4"
+    },
+    "questao34": {
+      "texto": "Sobre jurisdição e ação, de acordo com o Código de  Processo Civil, assinale a alternativa CORRETA:",
+      "alternativas": {
+        "1": "Ninguém poderá pleitear direito alheio em  nome próprio.",
+        "2": "O interesse de agir pode limitar-se à declaração  da inexistência de uma relação jurídica.",
+        "3": "A ausência de legitimidade ou de interesse de  agir implica a extinção do processo sem  resolução de mérito.",
+        "4": "O substituto poderá intervir como assistente  litisconsorcial na substituição processual."
+      },
+      "correta": "2"
+    },
+    "questao35": {
+      "texto": "De acordo com a Constituição da República, assinale a  alternativa CORRETA:",
+      "alternativas": {
+        "1": "Haverá pena de morte em caso de guerra  declarada.",
+        "2": "A lei só poderá restringir a publicidade dos atos  processuais em defesa da intimidade ou quando  o interesse do Governo o exigirem.",
+        "3": "Os casos de transgressão militar ou crime  propriamente militar, definidos em lei, admitem  prisão sem que a pessoa esteja em flagrante  delito ou sem ordem escrita e fundamentada de  autoridade judiciária competente.",
+        "4": "É direito do preso conhecer a identificação dos  responsáveis por sua prisão ou por seu  interrogatório policial, salvo nos casos em que  houver necessidade de resguardo da segurança  da autoridade."
+      },
+      "correta": "1"
+    },
+    "questao36": {
+      "texto": "A respeito das regras de competência do Código de  Processo Civil, assinale a alternativa CORRETA:",
+      "alternativas": {
+        "1": "Havendo dois ou mais autores com diferentes  domicílios, poderão demandar em qualquer  foro por livre escolha.",
+        "2": "A execução será proposta no foro de domicílio  do devedor, no de sua residência ou no do lugar  onde for encontrado.",
+        "3": "A eleição de foro não será válida se o litígio  recair sobre direito de propriedade, vizinhança,  servidão, divisão e demarcação de terras e de  nunciação de obra nova.",
+        "4": "A ação possessória será proposta no foro de  situação da coisa, cujo juízo tem competência  absoluta."
+      },
+      "correta": "3"
+    },
+    "questao37": {
+      "texto": "Assinale, de acordo com a Constituição da República, a  alternativa que descreve um objetivo fundamental da  República Federativa do Brasil:",
+      "alternativas": {
+        "1": "Proteção da soberania.",
+        "2": "Respeito aos valores sociais do trabalho e da  livre iniciativa.",
+        "3": "Promoção do bem de todos, sem qualquer  discriminação.",
+        "4": "Respeito ao pluralismo político."
+      },
+      "correta": "3"
+    },
+    "questao38": {
+      "texto": "A respeito da capacidade processual, assinale a  alternativa CORRETA:",
+      "alternativas": {
+        "1": "Todo sujeito de direito tem capacidade para  estar em juízo.",
+        "2": "O incapaz será representado ou assistido por  seus pais, por tutor ou por curador, na forma da  lei.",
+        "3": "A curatela especial será exercida pelo  Ministério Público.",
+        "4": "A participação do cônjuge do autor ou do réu na  ação é indispensável nas hipóteses de composse  ou de ato por ambos praticado."
+      },
+      "correta": "2"
+    },
+    "questao39": {
+      "texto": "Acerca dos direitos do consumidor, assinale a  alternativa INCORRETA:",
+      "alternativas": {
+        "1": "Poderá ser desconsiderada a personalidade  jurídica quando, em detrimento do consumidor,  houver abuso de direito, excesso de poder,  infração da lei, fato ou ato ilícito ou violação  dos estatutos ou contrato social.",
+        "2": "Poderá ser desconsiderada a personalidade  jurídica quando houver falência, estado de  insolvência, encerramento ou inatividade da  pessoa  jurídica  provocados,  independentemente das respectivas causas.",
+        "3": "Poderá ser desconsiderada a personalidade  jurídica sempre que a personalidade for, de  alguma forma, obstáculo ao ressarcimento de  prejuízos causados aos consumidores.",
+        "4": "Poderá ser desconsiderada a personalidade  jurídica quando os bens particulares dos sócios  e dos administradores da pessoa jurídica forem  constritos, observadas as normas relativas à  impenhorabilidade."
+      },
+      "correta": "2"
+    },
+    "questao40": {
+      "texto": "De acordo com a Constituição da República, assinale a  alternativa CORRETA:",
+      "alternativas": {
+        "1": "É garantido o direito da propriedade se atender  à sua função social.",
+        "2": "A pequena propriedade rural, assim definida em  lei, não pode ser desapropriada.",
+        "3": "A sucessão de bens de estrangeiros situados no  país sempre será regulada pela lei brasileira.",
+        "4": "É reconhecida a instituição do júri, com a  organização que lhe der a lei, assegurada a  competência para o julgamento dos crimes  dolosos contra a vida."
+      },
+      "correta": "4"
+    },
+    "questao41": {
+      "texto": "De acordo com a Constituição da República, é  CORRETO afirmar que:",
+      "alternativas": {
+        "1": "O Supremo Tribunal Federal e os Tribunais  Superiores têm jurisdição e sede em todo o  território nacional.",
+        "2": "Constituem  crimes  inafiançáveis  e  imprescritíveis, o racismo e a ação de grupos  armados, civis ou militares, contra a ordem  constitucional e o Estado Democrático.",
+        "3": "Conceder-se-á mandado de injunção para  assegurar o conhecimento de informações  relativas à pessoa do impetrante ou para a  retificação de seus dados.",
+        "4": "A autoridade competente poderá usar de  propriedade  particular,  assegurada  ao  proprietário indenização ulterior, se houver  dano."
+      },
+      "correta": "2"
+    },
+    "questao42": {
+      "texto": "Acerca das normas processuais aplicáveis ao Juizado  Especial da Fazenda Pública, assinale a alternativa  INCORRETA:",
+      "alternativas": {
+        "1": "Nas causas sujeitas à competência dos Juizados  Especiais da Fazenda Pública, não é possível  requerer a produção de prova pericial ou exame  técnico.",
+        "2": "A competência dos Juizados Especiais da  Fazenda Pública é absoluta, razão pela qual  pode ser declarada de ofício pelo juízo.",
+        "3": "Às causas sujeitas à competência dos Juizados  Especiais da Fazenda Pública não se aplica o  instituto processual do reexame necessário.",
+        "4": "O conciliador, sob a supervisão do juiz, poderá  conduzir a audiência de conciliação, podendo,  para fins de encaminhamento da composição  amigável, ouvir as partes e as testemunhas  sobre os contornos fáticos da controvérsia."
+      },
+      "correta": "1"
+    },
+    "questao43": {
+      "texto": "Acerca dos direitos do consumidor, assinale a  alternativa CORRETA:",
+      "alternativas": {
+        "1": "O direito de reclamar pelos vícios aparentes ou  de fácil constatação caduca em 90 (noventa)  dias, tratando-se de fornecimento de serviço e  de produtos não duráveis.",
+        "2": "O direito de reclamar pelos vícios aparentes ou  de fácil constatação caduca em 30 (trinta) dias,  tratando-se de fornecimento de serviço e de  produtos duráveis.",
+        "3": "A contagem do prazo decadencial para reclamar  pelos vícios inicia-se a partir da entrega efetiva  do produto ou do término da execução dos  serviços. Tratando-se de vício oculto, o prazo  decadencial inicia-se no momento em que ficar  evidenciado o defeito.",
+        "4": "A pretensão à reparação pelos danos causados  por fato do produto ou do serviço prescreve em  3 (três) anos, iniciando-se a contagem do prazo  a partir do conhecimento do dano e de sua  autoria."
+      },
+      "correta": "3"
+    },
+    "questao44": {
+      "texto": "A respeito dos deveres das partes e dos procuradores,  assinale a alternativa CORRETA:",
+      "alternativas": {
+        "1": "Protelar o processo constitui ato atentatório à  dignidade da justiça, sujeitando o responsável  ao pagamento de multa de até dez por cento do  valor da causa, de acordo com a gravidade da  conduta.",
+        "2": "Em causas de valor irrisório ou inestimável, a  multa por litigância de má-fé é limitada a 15  salários mínimos.",
+        "3": "Aos advogados públicos ou privados e aos  membros da Defensoria Pública e do Ministério  Público, não se aplica multa por litigância de  má-fé, devendo eventual responsabilidade  disciplinar ser apurada pelo respectivo órgão de  classe ou corregedoria, ao qual o juiz oficiará.",
+        "4": "Havendo  provocação  de  incidente  manifestamente infundado, o juiz determinará o  restabelecimento do estado anterior, podendo,  ainda, proibir a parte de falar nos autos até a  purgação do atentado, sem prejuízo da  aplicação de multa."
+      },
+      "correta": "4"
+    },
+    "questao45" : {
+      "texto" : "A Administração Pública tem a prerrogativa de anular e  revogar os seus próprios atos, sem precisar recorrer ao  Poder Judiciário. O princípio que subsidia o controle da  Administração Pública sobre seus próprios atos  administrativos quanto ao seu mérito e quanto à sua  legalidade é o princípio da:",
+      "alternativas" : {
+        "1" : "Razoabilidade.",
+        "2" : "Moralidade.",
+        "3" : "Autotutela.",
+        "4" : "Eficiência."
+      },
+      "correta" : "3"
+    },
+    "questao46" : {
+      "texto" : "Sobre a validade dos negócios jurídicos, assinale a  alternativa INCORRETA:",
+      "alternativas" : {
+        "1" : "O silêncio importa anuência, quando as  circunstâncias ou os usos o autorizarem e não  for necessária a declaração de vontade  expressa.",
+        "2" : "Nas declarações de vontade se atenderá mais à  intenção nelas consubstanciada do que ao  sentido literal da linguagem.",
+        "3" : "A validade da declaração de vontade não  dependerá de forma especial, senão quando a lei  expressamente a exigir.",
+        "4" : "A manifestação de vontade subsiste ainda que o  seu autor haja feito a reserva mental de não  querer o que manifestou, mesmo se dela o  destinatário tinha conhecimento."
+      },
+      "correta" : "4"
+    },
+    "questao47" : {
+      "texto" : "Sobre os atos  ilícitos,  assinale  a  alternativa INCORRETA:",
+      "alternativas" : {
+        "1" : "Aquele que, por ação ou omissão voluntária,  negligência ou imprudência, violar direito e  causar dano a outrem, ainda que  exclusivamente moral, comete ato ilícito.",
+        "2" : "Comete ato ilícito o titular de um direito que, ao  exercê-lo, excede manifestamente os limites  impostos pelo seu fim econômico ou social,  pela boa-fé ou pelos bons costumes.",
+        "3" : "Não constituem atos ilícitos os praticados em  legítima defesa ou no exercício regular de um  direito reconhecido.",
+        "4" : "Não constituem atos ilícitos a deterioração ou a  destruição da coisa alheia, ou a lesão a pessoa,  a fim de remover perigo iminente, mesmo que  exceda aos limites do indispensável."
+      },
+      "correta" : "4"
+    },
+    "questao48" : {
+      "texto" : "Leia as afirmativas a seguir:<br><br>I- Incapacidade relativa do agente.<br>II- O motivo determinante, comum a ambas as  partes, for ilícito.<br>III- Vício resultante de erro, dolo, coação, estado de  perigo, lesão ou fraude contra credores.<br>IV- For preterida alguma solenidade que a lei  considere essencial para a sua validade.<br><br>São causas que tornam o negócio jurídico nulo as  descritas em:",
+      "alternativas" : {
+        "1" : "I e II apenas.",
+        "2" : "I, II e III apenas.",
+        "3" : "II e III apenas.",
+        "4" : "II e IV apenas."
+      },
+      "correta" : "4"
+    },
+    "questao49" : {
+      "texto" : "A Administração Pública tem como uma de suas  prerrogativas o poder de limitar ou disciplinar o  exercício de direito, interesse ou liberdade, bem como  regular a prática de ato ou abstenção de fato, em favor  do interesse da coletividade.  É CORRETO afirmar que a definição apresentada  refere-se ao poder:",
+      "alternativas" : {
+        "1" : "De polícia.",
+        "2" : "Regulamentar.",
+        "3" : "Discricionário.",
+        "4" : "Disciplinar."
+      },
+      "correta" : "1"
+    },
+    "questao50" : {
+      "texto" : "Uma das tendências na Administração Pública, em  busca da eficiência administrativa, é a ideia de  descentralização da administração e das atividades  estatais, mediante a criação de pessoas jurídicas para o  desempenho de finalidades específicas do Estado.  Pensado inicialmente para as autarquias, esse princípio  orienta todas as pessoas administrativas que integram a  Administração Pública Indireta, as quais deverão atuar  de acordo com o objeto definido em lei.  É CORRETO afirmar que o excerto apresentado versa  sobre o princípio da(o):",
+      "alternativas" : {
+        "1" : "Finalidade.",
+        "2" : "Interesse público.",
+        "3" : "Especialidade.",
+        "4" : "Eficiência."
+      },
+      "correta" : "3"
+    },
+    "questao51" : {
+      "texto" : "No que diz respeito à relação de causalidade e à  relevância da omissão, conforme disposto no Código  Penal, assinale a alternativa CORRETA:",
+      "alternativas" : {
+        "1" : "O resultado, de que independe a existência do  crime, somente é imputável a quem lhe deu  causa. Considera-se causa a ação ou a omissão  sem a qual o resultado não teria ocorrido.",
+        "2" : "A superveniência de causa relativamente  independente exclui a imputação quando, por si  só, produziu o resultado; os fatos anteriores,  entretanto, imputam-se a quem os praticou.",
+        "3" : "A omissão é penalmente irrelevante quando o  omitente devia e podia agir para evitar o  resultado.",
+        "4" : "O dever de agir incumbe apenas a quem tenha  por lei obrigação de cuidado, proteção ou  vigilância."
+      },
+      "correta" : "2"
+    },
+    "questao52" : {
+      "texto" : "O Decreto-Lei no 2.848, de 7 de dezembro de 1940,  Código Penal, preceitua que se considera praticado o  crime:",
+      "alternativas" : {
+        "1" : "No momento da ação apenas.",
+        "2" : "No momento da omissão apenas.",
+        "3" : "No momento da ação ou da omissão, ainda que  outro seja o momento do resultado.",
+        "4" : "No momento da ação ou da omissão, desde que  seja o mesmo momento do resultado."
+      },
+      "correta" : "3"
+    },
+    "questao53" : {
+      "texto" : "As espécies de pena previstas no Código Penal são:",
+      "alternativas" : {
+        "1" : "Restritivas de liberdade e privativas de direitos  apenas.",
+        "2" : "Privativas de liberdade, restritivas de direitos e  de prestação pecuniária.",
+        "3" : "Privativas de liberdade e restritivas de direitos  apenas.",
+        "4" : "Privativas de liberdade, restritivas de direitos e  de multa."
+      },
+      "correta" : "4"
+    },
+    "questao54" : {
+      "texto" : "Nos termos do artigo 6o do Decreto-Lei no 2.848, de 7  de dezembro de 1940, Código Penal, considera-se  praticado o crime no lugar em que:",
+      "alternativas" : {
+        "1" : "Ocorreu a ação, no todo ou em parte, bem como  onde se produziu ou deveria produzir-se o  resultado.",
+        "2" : "Ocorreu a ação ou omissão, completamente,  bem como onde se produziu ou deveria  produzir-se o resultado.",
+        "3" : "Ocorreu a omissão, no todo ou em parte, bem  como onde se produziu ou deveria produzir-se  o resultado.",
+        "4" : "Ocorreu a ação ou omissão, no todo ou em  parte, bem como onde se produziu ou deveria  produzir-se o resultado."
+      },
+      "correta" : "4"
+    },
+    "questao55" : {
+      "texto" : "De acordo com o artigo 23 do Código Penal, é  INCORRETO afirmar que este prevê que não há crime  quando o agente pratica o fato:",
+      "alternativas" : {
+        "1" : "Em legítima defesa.",
+        "2" : "Em estado de necessidade.",
+        "3" : "Em estrito cumprimento de dever legal.",
+        "4" : "Em situação de inexigibilidade de conduta  diversa."
+      },
+      "correta" : "4"
+    },
+    "questao56" : {
+      "texto" : "São órgãos do Tribunal de Justiça, sob a direção do  Presidente, EXCETO:",
+      "alternativas" : {
+        "1" : "Câmaras Cíveis.",
+        "2" : "Câmaras Criminais.",
+        "3" : "Conselho da Magistratura.",
+        "4" : "Comissões Provisórias."
+      },
+      "correta" : "4"
+    },
+    "questao57" : {
+      "texto" : "Conforme dispõe o artigo 52 da Lei de Organização e  Divisão Judiciárias do Estado de Minas Gerais, a  jurisdição de primeiro grau é exercida por, EXCETO:",
+      "alternativas" : {
+        "1" : "Juiz de Direito.",
+        "2" : "Juizados Comuns.",
+        "3" : "Tribunal do Júri.",
+        "4" : "Juizados Especiais."
+      },
+      "correta" : "2"
+    },
+    "questao58" : {
+      "texto" : "Nos termos do artigo 52 da Lei de Organização e  Divisão Judiciárias do Estado de Minas Gerais, sobre  quem exerce a jurisdição de primeiro grau, assinale V  para os verdadeiros e F para os falsos.<br><br>( ) Juiz de Direito.<br>( ) Juiz Federal.<br>( ) Tribunal do Júri.<br>( ) Juizados Especiais.<br><br>Assinale a alternativa que apresenta a sequência  CORRETA:",
+      "alternativas" : {
+        "1" : "V F V F.",
+        "2" : "F V V V.",
+        "3" : "V F V V.",
+        "4" : "F V F F."
+      },
+      "correta" : "3"
+    },
+    "questao59" : {
+      "texto" : "Conforme disposto no art. 9o do Regimento Interno, o  Tribunal de Justiça organiza-se e funciona pelos  seguintes órgãos, EXCETO:",
+      "alternativas" : {
+        "1" : "Tribunal Pleno, composto por vinte e cinco  desembargadores e sob a presidência do  Presidente.",
+        "2" : "Órgão Especial, constituído pelos treze  desembargadores mais antigos e por doze  desembargadores eleitos, observado o quinto  constitucional.",
+        "3" : "Corregedoria-Geral de Justiça.",
+        "4" : "Seções cíveis, presididas pelo Primeiro Vice-  Presidente e integradas."
+      },
+      "correta" : "1"
+    },
+    "questao60" : {
+      "texto" : "O artigo 9o do Regimento Interno do Tribunal de Justiça  de Minas Gerais dispõe que o Tribunal de Justiça  organiza-se e funciona por órgãos, sob a direção do  Presidente, dentre eles comissões permanentes, com as  seguintes composições:<br><br>I- Comissão de Organização e Divisão  Judiciárias.<br>II- Comissão de Regimento Externo.<br>III- Comissão de Divulgação da Jurisprudência.<br>IV- Comissão Administrativa.<br><br>Estão CORRETAS as composições previstas em:",
+      "alternativas" : {
+        "1" : "I e II apenas.",
+        "2" : "I, III e IV apenas.",
+        "3" : "I, II, III e IV.",
+        "4" : "II, III e IV apenas."
+      },
+      "correta" : "2"
+    }
+  }
+}

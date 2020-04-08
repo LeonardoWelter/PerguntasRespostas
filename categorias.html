@@ -82,10 +82,18 @@
 
 
 <script>
+    let categorias;
+
     carregarJSON('provas.json').then(function (result) {
         let json = JSON.parse(result);
 
         gerarListaProvas(json);
+    })
+
+    carregarJSON('categorias.json').then(function (result) {
+        let json2 = JSON.parse(result);
+
+        categorias = json2;
     })
 </script>
 </body>

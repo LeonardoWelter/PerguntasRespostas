@@ -14,10 +14,10 @@
     "data" : "26/03/2020"
   },
   "DR001" : {
-    "src" : "WIP",
-    "nome" : "Prova em PDF que o Dragon ainda não mandou",
-    "descricao" : "Não sei porque não recebi",
-    "tags" : "direito?",
-    "data" : "00/00/0000"
+    "src" : "provaEstagioTJMG.json",
+    "nome" : "Processo Seletivo Estagiários Tribunal de Justiça de Minas Gerais",
+    "descricao" : "Prova utilizada para seleção de Estagiários pelo TJMG",
+    "tags" : "direito, português",
+    "data" : "2019"
   }
 }
