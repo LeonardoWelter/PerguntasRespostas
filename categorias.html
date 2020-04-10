@@ -38,25 +38,13 @@
     <section class="mt-5">
         <div class="row">
             <div class="col-12 col-md-3 mb-3">
-                <ul class="list-group">
-                    <a href="#" class="text-decoration-none list-group-item active">
-                        <li class="d-flex justify-content-between align-items-center">
-                            go4Troll eSports
-                            <span class="badge badge-primary badge-pill">14</span>
-                        </li>
-                    </a>
-                    <a href="#" class="text-decoration-none list-group-item">
-                        <li class="d-flex justify-content-between align-items-center">
-                            Zap
-                            <span class="badge badge-primary badge-pill">2</span>
-                        </li>
-                    </a>
-                    <a href="#" class="text-decoration-none list-group-item">
-                        <li class="d-flex justify-content-between align-items-center">
-                            Direito
-                            <span class="badge badge-primary badge-pill">1</span>
-                        </li>
-                    </a>
+                <ul class="list-group" id="listaCategorias">
+<!--                    <a href="#" class="text-decoration-none list-group-item active">-->
+<!--                        <li class="d-flex justify-content-between align-items-center">-->
+<!--                            Tudo-->
+<!--                            <span class="badge badge-primary badge-pill">14</span>-->
+<!--                        </li>-->
+<!--                    </a>-->
                 </ul>
             </div>
             <div class="col-12 col-md-9">
@@ -82,8 +70,6 @@
 
 
 <script>
-    let categorias;
-
     carregarJSON('provas.json').then(function (result) {
         let json = JSON.parse(result);
 
@@ -91,9 +77,9 @@
     })
 
     carregarJSON('categorias.json').then(function (result) {
-        let json2 = JSON.parse(result);
+        let json = JSON.parse(result);
 
-        categorias = json2;
+        gerarCategorias(json);
     })
 </script>
 </body>

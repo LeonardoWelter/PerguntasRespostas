@@ -31,3 +31,37 @@ function gerarListaProvas(json) {
         listaProvas.innerHTML += a.outerHTML;
     }
 }
+
+function gerarCategorias(categorias) {
+    let entries = Object.entries(categorias);
+
+    let ul = document.getElementById('listaCategorias');
+    let a = document.createElement('a');
+    a.className = 'text-decoration-none list-group-item';
+    let li = document.createElement('li');
+    li.className = 'd-flex justify-content-between align-items-center';
+    let span = document.createElement('span');
+    span.className = 'badge badge-primary badge-pill';
+
+    for (let i = 0; i < entries.length;i++) {
+        let nomeCategoria = entries[i][0];
+        let contentCategoria = entries[i][1];
+
+        a.className = 'text-decoration-none list-group-item';
+        li.innerText = nomeCategoria;
+        span.innerText = contentCategoria.split(',').length;
+
+        li.innerHTML += span.outerHTML;
+
+
+
+        if (nomeCategoria.toLowerCase() === recuperarParams('categoria')) {
+            a.className += ' active';
+        }
+
+        a.href = 'categorias.html?categoria=' + nomeCategoria.toLowerCase();
+        a.appendChild(li);
+        ul.innerHTML += a.outerHTML;
+    }
+
+}

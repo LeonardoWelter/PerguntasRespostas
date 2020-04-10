@@ -69,14 +69,14 @@
             </tr>
             </thead>
             <tbody id="corpoGabarito">
-            <tr id="questoesGabarito" class="text-center"></tr>
-            <tr id="respostasGabarito" class="text-center"></tr>
+                <tr id="questoesGabarito" class="text-center"></tr>
+                <tr id="respostasGabarito" class="text-center"></tr>
+            </tbody>
             <tr>
                 <td colspan="100" class="text-center">Você acertou <span id="acertosGabarito">0</span>
                     e errou <span id="errosGabarito">0</span> questões.
                 </td>
             </tr>
-            </tbody>
         </table>
     </section>
 </div>
@@ -94,6 +94,8 @@
         crossorigin="anonymous"></script>
 <script src="js/prova.js"></script>
 <script src="js/jsonLoader.js"></script>
+
+<script src="js/tests.js"></script>
 
 <script>
     buscaParams(recuperarParams('prova')).then(function (result) {
