@@ -87,6 +87,25 @@ function exibirGabarito(gabarito, marcadas, totalQuestoes) {
             tdResposta.className = 'bg-danger';
             erros += 1;
         }
+
+        // Caso as provas tenham mais de 10 questões, essa condicional quebra a tabela do gabarito
+        // a cada 10 questões, para uma melhor visualização
+        if ((numQuestoes % 10) === 0) {
+            let Q2 = document.createElement('tr');
+            let R2 = document.createElement('tr');
+
+            Q2.className = 'text-center';
+            Q2.id = 'questoesGabarito' + (numQuestoes / 10);
+            R2.className = 'text-center';
+            R2.id = 'respostasGabarito' + (numQuestoes / 10);
+
+            document.getElementById('corpoGabarito').appendChild(Q2);
+            document.getElementById('corpoGabarito').appendChild(R2);
+
+            qGab = document.getElementById('questoesGabarito' + (numQuestoes / 10));
+            rGab = document.getElementById('respostasGabarito' + (numQuestoes / 10));
+        }
+
         qGab.innerHTML += tdQuestao.outerHTML;
         rGab.innerHTML += tdResposta.outerHTML;
         aGab.innerHTML = acertos;
@@ -98,9 +117,9 @@ function exibirGabarito(gabarito, marcadas, totalQuestoes) {
 // e a função recuperarRespostas() para obter as alternativas marcadas pelo usuário,
 // então, inicia um Loop comparar as respostas, chamando as funções de estilização
 // das alternativas conforme o resultado.
-function corrigirProva() {
+function corrigirProva(respostas) {
     let json = Object.entries(_JSON.questoes);
-    let respostas = recuperarRespostas();
+    // let respostas = recuperarRespostas();
     let gabarito = [];
     let questaoAtual = Object.keys(respostas);
     let totalQuestoes = json.length;
