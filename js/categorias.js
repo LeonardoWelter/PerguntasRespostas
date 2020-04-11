@@ -1,5 +1,10 @@
-function gerarListaProvas(json) {
+let categorias;
+
+function gerarListaProvas(json, paramURL = 'tudo') {
     let listaProvas = document.getElementById('listaProvas');
+    categorias = Object.entries(categorias);
+    let arrayCategoria = categorias[0][1].split(',');
+    paramURL = paramURL[0].toUpperCase() + paramURL.substring(1);
 
     let provas = Object.entries(json);
 
@@ -14,21 +19,31 @@ function gerarListaProvas(json) {
     p.className = 'mb-1';
     let small2 = document.createElement('small');
 
-
     for (let i = 0; i < provas.length; i++) {
-        a.href = 'prova.html?prova=' + provas[i][0];
-        h5.innerHTML = provas[i][1].nome;
-        small1.innerHTML = provas[i][1].data;
-        p.innerHTML = provas[i][1].descricao;
-        small2.innerHTML = "Simulado e Gabarito disponíveis"
+        if (paramURL != 'Tudo') {
+            for (let j = 0; j < categorias.length; j++) {
+                if (categorias[j].indexOf(paramURL) === 0) {
+                    arrayCategoria = categorias[j][1].split(',');
+                    break;
+                }
+            }
+        }
+        if (arrayCategoria.indexOf(provas[i][0]) >= 0 || paramURL === 'Tudo') {
 
-        div.appendChild(h5);
-        div.appendChild(small1);
-        a.appendChild(div);
-        a.appendChild(p);
-        a.appendChild(small2);
+            a.href = 'prova.html?prova=' + provas[i][0];
+            h5.innerHTML = provas[i][1].nome;
+            small1.innerHTML = provas[i][1].data;
+            p.innerHTML = provas[i][1].descricao;
+            small2.innerHTML = "Simulado e Gabarito disponíveis";
 
-        listaProvas.innerHTML += a.outerHTML;
+            div.appendChild(h5);
+            div.appendChild(small1);
+            a.appendChild(div);
+            a.appendChild(p);
+            a.appendChild(small2);
+
+            listaProvas.innerHTML += a.outerHTML;
+        }
     }
 }
 

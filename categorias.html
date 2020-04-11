@@ -70,17 +70,19 @@
 
 
 <script>
-    carregarJSON('provas.json').then(function (result) {
-        let json = JSON.parse(result);
-
-        gerarListaProvas(json);
-    })
-
     carregarJSON('categorias.json').then(function (result) {
         let json = JSON.parse(result);
 
+        categorias = json;
+
         gerarCategorias(json);
-    })
+    });
+
+    carregarJSON('provas.json').then(function (result) {
+        let json = JSON.parse(result);
+
+        gerarListaProvas(json, recuperarParams('categoria'));
+    });
 </script>
 </body>
 </html>
