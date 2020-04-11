@@ -15,7 +15,7 @@ function carregarJSON(json) {
     });
 }
 
-// Recupera os parâmetros GET enviados ao clicar em um atalho para as provas
+// Recupera os parâmetros GET das URLs
 function recuperarParams(parametro) {
     let resultado = null,
         temp = [];

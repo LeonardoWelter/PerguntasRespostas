@@ -73,15 +73,15 @@
     carregarJSON('categorias.json').then(function (result) {
         let json = JSON.parse(result);
 
-        categorias = json;
+        let categorias = json;
 
         gerarCategorias(json);
-    });
 
-    carregarJSON('provas.json').then(function (result) {
-        let json = JSON.parse(result);
+        carregarJSON('provas.json').then(function (result) {
+            let json = JSON.parse(result);
 
-        gerarListaProvas(json, recuperarParams('categoria'));
+            gerarListaProvas(json, recuperarParams('categoria'), categorias);
+        });
     });
 </script>
 </body>

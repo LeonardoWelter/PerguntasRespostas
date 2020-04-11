@@ -1,6 +1,8 @@
-let categorias;
-
-function gerarListaProvas(json, paramURL = 'tudo') {
+// Função responsável por gerar dinamicamente os cards que mostram as informações e
+// redirecionam para as provas da aplicação.
+// Recebe um parâmetro (paramURL) que define qual categoria está selecionada para
+// gerar somente as provas daquela categoria
+function gerarListaProvas(json, paramURL = 'tudo', categorias) {
     let listaProvas = document.getElementById('listaProvas');
     categorias = Object.entries(categorias);
     let arrayCategoria = categorias[0][1].split(',');
@@ -19,7 +21,10 @@ function gerarListaProvas(json, paramURL = 'tudo') {
     p.className = 'mb-1';
     let small2 = document.createElement('small');
 
+    // Loop que itera sobre o array de provas produzido utilizando JSON provas.json
     for (let i = 0; i < provas.length; i++) {
+        // Se a categoria for diferente de 'Tudo' ocorre um Loop para encontrar
+        // quais provas estão presentes nessa categoria;
         if (paramURL != 'Tudo') {
             for (let j = 0; j < categorias.length; j++) {
                 if (categorias[j].indexOf(paramURL) === 0) {
@@ -28,6 +33,10 @@ function gerarListaProvas(json, paramURL = 'tudo') {
                 }
             }
         }
+
+        // Utilizando o array da categoria selecionada, ocorre a filtragem para
+        // verificar se a prova que está atualmente no loop é da categoria selecionada.
+        // Caso seja ela é renderizada.
         if (arrayCategoria.indexOf(provas[i][0]) >= 0 || paramURL === 'Tudo') {
 
             a.href = 'prova.html?prova=' + provas[i][0];
@@ -47,6 +56,7 @@ function gerarListaProvas(json, paramURL = 'tudo') {
     }
 }
 
+// Gera dinamicamente o menu lateral das categorias com base no JSON
 function gerarCategorias(categorias) {
     let entries = Object.entries(categorias);
 
@@ -58,6 +68,7 @@ function gerarCategorias(categorias) {
     let span = document.createElement('span');
     span.className = 'badge badge-primary badge-pill';
 
+    // Loop que itera sobre o array produzido utilizando o JSON categorias.json;
     for (let i = 0; i < entries.length;i++) {
         let nomeCategoria = entries[i][0];
         let contentCategoria = entries[i][1];
@@ -68,8 +79,7 @@ function gerarCategorias(categorias) {
 
         li.innerHTML += span.outerHTML;
 
-
-
+        // Verifica se a categoria no Loop é a atualmente selecionada para destacá-la.
         if (nomeCategoria.toLowerCase() === recuperarParams('categoria')) {
             a.className += ' active';
         }

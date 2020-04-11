@@ -117,9 +117,9 @@ function exibirGabarito(gabarito, marcadas, totalQuestoes) {
 // e a função recuperarRespostas() para obter as alternativas marcadas pelo usuário,
 // então, inicia um Loop comparar as respostas, chamando as funções de estilização
 // das alternativas conforme o resultado.
-function corrigirProva(respostas) {
+function corrigirProva() {
     let json = Object.entries(_JSON.questoes);
-    // let respostas = recuperarRespostas();
+    let respostas = recuperarRespostas();
     let gabarito = [];
     let questaoAtual = Object.keys(respostas);
     let totalQuestoes = json.length;
@@ -146,7 +146,7 @@ function gerarProva(json) {
     let numeroAlternativas = Object.keys(json.questoes.questao1.alternativas).length; // Verifica a quantidade de alternativas em uma questao
     let questoes = Object.entries(json.questoes); // Utilizado para recuperar o conteúdo das questões dentro dos Loops
 
-    document.title = json.nome + ' - Perguntas e Respostas';
+    document.title = json.nome + ' - Perguntas e Respostas'; // Altera o título do site com base na prova selecionada
 
     prova.innerHTML = ''; // Apaga tudo da section
 
