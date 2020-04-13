@@ -2,20 +2,70 @@
 // Risco de segurança, visto que está disponível pelo console também.
 let _JSON;
 
-// Função que recupera quais alternativas o usuário marcou e as adiciona em um Array indexado com o nome da questão.
+// Função que recupera quais alternativas o usuário marcou e as adiciona em um Array indexado pelo nome da questão.
 function recuperarRespostas() {
     let numQuestoes = Object.entries(_JSON.questoes).length;
     let marcadas = document.querySelectorAll('input[type="radio"]:checked');
+    let feedback = document.getElementById('feedback');
     let respostas = [];
 
-    let i = 0;
-
-    while (i < numQuestoes) {
-        respostas[marcadas[i].name] = marcadas[i].value;
-        i++
+    for (let loopR = 0; loopR < numQuestoes; loopR++) {
+        try {
+            respostas[marcadas[loopR].name] = marcadas[loopR].value;
+        } catch (e) {
+            mostrarFeedback(respostas);
+        }
     }
 
+    feedback.innerHTML = '';
+    feedback.className = '';
+
     return respostas;
+}
+
+function mostrarFeedback(respostas) {
+    let numQuestoes = Object.entries(_JSON.questoes).length;
+    let feedback = document.getElementById('feedback');
+    let naoRespondidas = [];
+    let stringRetorno;
+    respostas = Object.keys(respostas);
+
+    for (let i = 0; i < numQuestoes; i++) {
+        let nomeQuestao = 'questao' + (i+1);
+
+        document.getElementById(nomeQuestao).className = 'card w-100 mb-5';
+
+        if (respostas.indexOf(nomeQuestao) === -1) {
+            naoRespondidas.push(nomeQuestao);
+        }
+    }
+
+    for (let j = 0; j < naoRespondidas.length; j++) {
+        let cardAtual = document.getElementById(naoRespondidas[j]);
+
+        cardAtual.className += ' border-danger';
+    }
+
+    for (let k = 0; k < naoRespondidas.length; k++) {
+        let naoRespondidas2 = [];
+        naoRespondidas2[k] = naoRespondidas[k][0].toUpperCase() + naoRespondidas[k].substring(1);
+        naoRespondidas2[k] = naoRespondidas2[k].replace('a', 'ã').replace('o', 'o ');
+        if (k === 0) {
+            stringRetorno = naoRespondidas2[k] + ', ';
+        } else if (k < naoRespondidas.length) {
+            stringRetorno += naoRespondidas2[k] + ', ';
+        }
+    }
+
+    stringRetorno = stringRetorno.slice(0, stringRetorno.length-2);
+    stringRetorno += '.';
+
+    feedback.className += ' p-4';
+    feedback.innerText =
+        'Alguma(s) questão(ões) não foram respondidas\n'
+        + stringRetorno +
+        '\nVerifique as questão(ões) e tente novamente!';
+    throw new Error('Alguma(s) questão(ões) não foram respondidas');
 }
 
 // Função que altera a estilização das alternativas corretas.
@@ -161,9 +211,9 @@ function gerarProva(json) {
     button.className = 'btn btn-primary btn-block mb-5';
     button.innerHTML = 'Corrigir';
     button.addEventListener('click', corrigirProva);
-    let span = document.createElement('span');
-    span.id = 'feedback';
-    span.className = 'text-center d-block mb-3';
+    let pFeedback = document.createElement('p');
+    pFeedback.id = 'feedback';
+    pFeedback.className = 'text-center text-white d-block mb-3 bg-danger';
 
     prova.appendChild(h3);
 
@@ -181,6 +231,7 @@ function gerarProva(json) {
     for (let j = 0; j < questoes.length; j++) {
 
         div1.className = 'card w-100 mb-5';
+        div1.id = questoes[j][0];
         div2.className = 'card-body';
 
         h5.className = 'card-title';
@@ -223,7 +274,7 @@ function gerarProva(json) {
         ul.innerHTML = '';
     }
 
-    prova.appendChild(span);
+    prova.appendChild(pFeedback);
     // Insere o botão na página
     prova.appendChild(button);
 }
