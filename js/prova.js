@@ -100,7 +100,7 @@ function removerInputs() {
     let inputs = document.getElementsByTagName('input');
 
     // Inicia o loop no 1 para não remover o input de busca da navbar
-    for (let i = 1; i < inputs.length; i++) {
+    for (let i = 0; i < inputs.length; i++) {
         inputs[i].hidden = true;
     }
 }
