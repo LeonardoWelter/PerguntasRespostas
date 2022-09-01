@@ -13,6 +13,13 @@
     "tags": "logica, programação, desenvolvimento, algoritmo",
     "data" : "26/03/2020"
   },
+  "ME001" : {
+    "src": "ministerioEconomia.json",
+    "nome" : "Especialista em Desenvolvimento de Software - Ministério da Economia",
+    "descricao" : "Concurso seletivo Especialista em Desenvolvimento de Software - Ministério da Economia",
+    "tags": "logica, programação, desenvolvimento, algoritmo",
+    "data" : "2020"
+  },
   "DR001" : {
     "src" : "provaEstagioTJMG.json",
     "nome" : "Processo Seletivo Estagiários Tribunal de Justiça de Minas Gerais",
