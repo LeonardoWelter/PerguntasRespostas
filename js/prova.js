@@ -177,7 +177,7 @@ function corrigirProva() {
     for (let questoes = 0; questoes < totalQuestoes; questoes++) {
         if (json[questoes][1].correta == respostas[json[questoes][0]]) {
             console.log(json[questoes][0] + ' correta');
-            marcarCorreta(questaoAtual[questoes], '3');
+            marcarCorreta(questaoAtual[questoes], json[questoes][1].correta);
         } else {
             console.log(json[questoes][0] + ' incorreta');
             marcarIncorreta(questaoAtual[questoes], respostas[json[questoes][0]], json[questoes][1].correta);
