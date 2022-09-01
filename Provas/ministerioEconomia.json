@@ -4,7 +4,7 @@
     "data": "2020",
     "questoes": {
       "questao1": {
-        "texto": "Texto CG1A1-I <br><br>Algumas das primeiras incursões pelos mundos paralelos ocorreram na década de 50 do século passado, graças ao trabalho de pesquisadores interessados em certos aspectos da mecânica quântica — teoria desenvolvida para explicar os fenômenos que         ocorrem no reino microscópico dos átomos e das partículas subatômicas. A mecânica quântica quebrou o molde da mecânica clássica, que a antecedeu, ao firmar o conceito de que as previsões científicas são necessariamente probabilísticas. Podemos prever a probabilidade de alcançar determinado resultado ou outro, mas em geral não podemos prever qual deles acontecerá. Essa quebra de rumo com relação a centenas de anos de pensamento científico já é suficientemente chocante, mas há outro aspecto da teoria quântica que nos confunde ainda mais, embora desperte menos atenção. Depois de anos de criterioso estudo da mecânica quântica, e depois da acumulação de uma pletora de dados que confirmam suas previsões probabilísticas, ninguém até hoje soube explicar por que razão apenas uma das muitas resoluções possíveis de qualquer situação que se estude torna-se real. Quando fazemos experimentos, quando examinamos o mundo, todos estamos de acordo com o fato de que deparamos com uma realidade única e definida. Contudo, mais de um século depois do início da revolução quântica, não há consenso entre os físicos quanto à razão e à forma de compatibilizar esse fato básico com a expressão matemática da teoria. <br><br>Acerca das ideias e dos sentidos do texto CG1A1-I, julgue os próximos itens. <br><br> <b>1</b> De acordo com o texto, um aspecto da teoria quântica que recebeu menor atenção é a singularidade do real confrontada com a infinitude de possibilidades especuladas.",
+        "texto": "Texto <b>CG1A1-I</b> <br><br>Algumas das primeiras incursões pelos mundos paralelos ocorreram na década de 50 do século passado, graças ao trabalho de pesquisadores interessados em certos aspectos da mecânica quântica — teoria desenvolvida para explicar os fenômenos que         ocorrem no reino microscópico dos átomos e das partículas subatômicas. A mecânica quântica quebrou o molde da mecânica clássica, que a antecedeu, ao firmar o conceito de que as previsões científicas são necessariamente probabilísticas. Podemos prever a probabilidade de alcançar determinado resultado ou outro, mas em geral não podemos prever qual deles acontecerá. Essa quebra de rumo com relação a centenas de anos de pensamento científico já é suficientemente chocante, mas há outro aspecto da teoria quântica que nos confunde ainda mais, embora desperte menos atenção. Depois de anos de criterioso estudo da mecânica quântica, e depois da acumulação de uma pletora de dados que confirmam suas previsões probabilísticas, ninguém até hoje soube explicar por que razão apenas uma das muitas resoluções possíveis de qualquer situação que se estude torna-se real. Quando fazemos experimentos, quando examinamos o mundo, todos estamos de acordo com o fato de que deparamos com uma realidade única e definida. Contudo, mais de um século depois do início da revolução quântica, não há consenso entre os físicos quanto à razão e à forma de compatibilizar esse fato básico com a expressão matemática da teoria. <br><br>Acerca das ideias e dos sentidos do texto CG1A1-I, julgue os próximos itens. <br><br> <b>1</b> De acordo com o texto, um aspecto da teoria quântica que recebeu menor atenção é a singularidade do real confrontada com a infinitude de possibilidades especuladas.",
         "alternativas": {
           "1": "Certo",
           "2": "Errado."
@@ -17,7 +17,7 @@
           "1": "Certo",
           "2": "Errado."
         },
-        "correta": "1"
+        "correta": "2"
       },
       "questao3": {
         "texto": "<b>3</b> Infere-se da afirmação “A mecânica quântica quebrou o molde da mecânica clássica”, no segundo período do texto, que a mecânica quântica subverteu paradigmas da mecânica clássica.",
@@ -34,6 +34,150 @@
           "2": "Errado."
         },
         "correta": "1"
+      },
+      "questao5": {
+        "texto": "<b>5</b> No terceiro período do texto, o adjetivo “determinado” está empregado com o mesmo sentido de <b>decidido</b>.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "2"
+      },
+      "questao6": {
+        "texto": "Com relação aos aspectos linguísticos do texto CG1A1-I, julgue os itens a seguir. <br><br><b>6</b> No segundo período do texto, o termo “a”, em “que a antecedeu”, faz referência a “mecânica quântica”.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "1"
+      },
+      "questao7": {
+        "texto": "<b>7</b> No quinto período do texto, o vocábulo “suas”, em “suas previsões”, tem como referente o termo “pletora”.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "2"
+      },
+      "questao8": {
+        "texto": "<b>8</b> No quarto período do texto, a substituição de “embora desperte” por <b>apesar de despertar</b> manteria a correção gramatical e o sentido original do texto.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "1"
+      },
+      "questao9": {
+        "texto": "<b>9</b> No trecho “com relação a centenas de anos de pensamento científico”, no quarto período do texto, a substituição do vocábulo “a” por às manteria a correção gramatical do texto.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "1"
+      },
+      "questao10": {
+        "texto": "<b>10</b> Mantendo-se a correção gramatical e a coerência do texto, o trecho “Depois de anos de criterioso estudo da mecânica quântica, e depois da acumulação de uma pletora de dados que confirmam suas previsões probabilísticas”, no quinto período do texto, poderia ser reescrito da seguinte maneira: Após anos de meticuloso estudo da mecânica quântica, e após a acumulação de uma superabundância de dados que confirmam suas previsões probabilísticas.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "1"
+      },
+      "questao11": {
+        "texto": "<b>11</b> No trecho “por que razão”, no quinto período, o vocábulo “que” poderia ser substituído por <b>qual</b>, sem prejuízo da correção gramatical do texto.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "1"
+      },
+      "questao12": {
+        "texto": "<b>12</b> No quinto período do texto, a forma verbal “estude” expressa uma exigência.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "2"
+      },
+      "questao13": {
+        "texto": "<b>13</b> No trecho “deparamos com uma realidade única e definida”, no sexto período do texto, a supressão da preposição “com” prejudicaria a correção gramatical do texto.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "2"
+      },
+      "questao14": {
+        "texto": "Ele entrou tarde no restaurante. Poderia ter uns sessenta anos, era alto, corpulento, de cabelos brancos, sobrancelhas espessas e mãos potentes. Num dedo o anel de sua força. Sentou-se amplo e sólido.<br> Perdi-o de vista e enquanto comia observei de novo amulher magra de chapéu. Ela ria com a boca cheia e rebrilhava osolhos escuros.<br> No momento em que eu levava o garfo à boca, olhei-o. Ei-lo de olhos fechados mastigando pão com vigor e mecanismo, os dois punhos cerrados sobre a mesa. Continuei comendo e olhando. O garçom dispunha os pratos sobre a toalha. Mas ovelho mantinha os olhos fechados. A um gesto mais vivo do criado ele os abriu com tal brusquidão que este mesmo  movimento se comunicou às grandes mãos e um garfo caiu. O garçom sussurrou palavras amáveis abaixando-se para apanhá-lo; ele não respondia. Porque agora desperto, virava subitamente a carne de um lado e de outro, examinava-a com veemência, a ponta da língua aparecendo — apalpava o bife com as costas do garfo, quase o cheirava, mexendo a boca de antemão. E começava a cortá-lo com um movimento inútil devigor de todo o corpo. Olhei para o meu prato. Quando fitei-o de novo, ele estava em plena glória do jantar, mastigando de boca aberta, passando a língua pelos dentes, com o olhar fixo na luz do teto.<br><br>Julgue os itens que se seguem, relativos às ideias e aos aspectos linguísticos do texto precedente.<br><br><b>14</b> O texto narra, de forma breve, o comportamento de um homem durante um jantar.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "1"
+      },
+      "questao15": {
+        "texto": "<b>15</b> No trecho “Porque agora desperto, virava subitamente a carne de um lado e de outro”, no terceiro parágrafo, o vocábulo “porque”, introduz, no período em que se insere, uma ideia de finalidade.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "2"
+      },
+      "questao16": {
+        "texto": "<b>16</b> No trecho “No momento em que eu levava o garfo à boca”, no terceiro parágrafo, o sinal indicativo de crase empregado em “à” poderia ser suprimido, sem prejuízo para a correção gramatical do trecho.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "2"
+      },
+      "questao17": {
+        "texto": "<b>17</b> No trecho apresentado o narrador condena os modos do homem que ele observa jantar, modos esses que deixa clara a diferença de classe social entre eles.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "1"
+      },
+      "questao18": {
+        "texto": "<b>18</b> No oitavo período do terceiro parágrafo do texto, a forma pronominal “lo”, em “cortá-lo”, refere-se ao vocábulo “bife”, no período anterior.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "1"
+      },
+      "questao19": {
+        "texto": "Quando eu era criança (e isso aconteceu em outro tempo e em outro espaço), não era incomum ouvir a pergunta “Quão longe é daqui até lá?” respondida por um “Mais ou menos uma hora, ou um pouco menos se você caminhar rápido”. Num tempo ainda anterior à minha infância, suponho que a resposta mais comum teria sido “Se você sair agora, estará lá por volta do meio-dia” ou “Melhor sair agora, se você quiser chegar antes que escureça”. Hoje em dia, pode-se ouvir ocasionalmente essas respostas. Mas serão normalmente precedidas por uma solicitação para ser mais específico: “Você vai de carro ou a pé?”.<br>“Longe” e “tarde”, assim como “perto” e “cedo” , significavam quase a mesma coisa: exatamente quanto esforço seria necessário para que um ser humano percorresse uma certa distância — fosse caminhando, semeando ou arando. Se as pessoas fossem instadas a explicar o que entendiam por “espaço” e “tempo”, poderiam ter dito que “espaço” é o que se podepercorrer em certo tempo, e que “tempo” é o que se precisa para percorrê-lo. Se não fossem muito pressionados, porém, não entrariam no jogo da definição. E por que deveriam? A maioria das coisas que fazem parte da vida cotidiana são compreendidas razoavelmente até que se precise defini-las; e, a menos que solicitados, não precisaríamos defini-las. O modo como compreendíamos essas coisas que hoje tendemos a chamar de “espaço” e “tempo” era não apenas satisfatório, mas tão preciso quanto necessário, pois era o wetware — os humanos, os bois e os cavalos — que fazia o esforço e punha os limites. Um par de pernas humanas pode ser diferente de outros, mas a substituição de um par por outro não faria uma diferença suficientemente grande para requerer outras medidas além da capacidade dos músculos humanos.<br><br>A respeito das ideias e dos aspectos linguísticos do texto anterior, julgue os itens seguintes.<br><br><b>19</b> Para o autor, a maneira como tempo e espaço eram percebidos antigamente é diferente daquela notada por ele quando do seu relato.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "1"
+      },
+      "questao20": {
+        "texto": "<b>20</b> A correção gramatical e o sentido original do texto seriam preservados se o período “Se não fossem muito pressionados, porém, não entrariam no jogo da definição”, no segundo parágrafo, fosse reescrito da seguinte forma: Não entrariam no jogo da definição se não fossem muito pressionados, porém.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "1"
+      },
+      "questao21": {
+        "texto": "<b>21</b> A vírgula empregada logo após o trecho “Num tempo ainda anterior à minha infância”, no primeiro parágrafo do texto, poderia ser suprimida sem prejuízo para a correção gramatical do texto.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "2"
+      },
+      "questao22": {
+        "texto": "<b>22</b> No primeiro parágrafo do texto, os trechos ‘Se você sair agora’ e ‘Melhor sair agora’ exprimem, respectivamente, a consequência do evento expresso pelo trecho ‘estará lá por volta do meio-dia’ e o resultado do que é expresso pelo trecho ‘se você quiser chegar antes que escureça’.",
+        "alternativas": {
+          "1": "Certo",
+          "2": "Errado."
+        },
+        "correta": "2"
       }
     }
 }
