@@ -1,0 +1,15 @@
+{
+    "nome": "Especialista em Desenvolvimento de Software - Ministério da Economia",
+    "tags": "lógica, programação, desenvolvimento, algoritmo",
+    "data": "2020",
+    "questoes": {
+      "questao1": {
+        "texto": "Texto CG1A1-I <br><br>Algumas das primeiras incursões pelos mundos paralelos ocorreram na década de 50 do século passado, graças ao trabalho de pesquisadores interessados em certos aspectos da mecânica quântica — teoria desenvolvida para explicar os fenômenos que         ocorrem no reino microscópico dos átomos e das partículas subatômicas. A mecânica quântica quebrou o molde da mecânica clássica, que a antecedeu, ao firmar o conceito de que as previsões científicas são necessariamente probabilísticas. Podemos prever a probabilidade de alcançar determinado resultado ou outro, mas em geral não podemos prever qual deles acontecerá. Essa quebra de rumo com relação a centenas de anos de pensamento científico já é suficientemente chocante, mas há outro aspecto da teoria quântica que nos confunde ainda mais, embora desperte menos atenção. Depois de anos de criterioso estudo da mecânica quântica, e depois da acumulação de uma pletora de dados que confirmam suas previsões probabilísticas, ninguém até hoje soube explicar por que razão apenas uma das muitas resoluções possíveis de qualquer situação que se estude torna-se real. Quando fazemos experimentos, quando examinamos o mundo, todos estamos de acordo com o fato de que deparamos com uma realidade única e definida. Contudo, mais de um século depois do início da revolução quântica, não há consenso entre os físicos quanto à razão e à forma de compatibilizar esse fato básico com a expressão matemática da teoria. <br><br>Acerca das ideias e dos sentidos do texto CG1A1-I, julgue os próximos itens. <br><br> <b>1</b> De acordo com o texto, um aspecto da teoria quântica que recebeu menor atenção é a singularidade do real confrontada com a infinitude de possibilidades especuladas",
+        "alternativas": {
+          "C": "Certo",
+          "E": "Errado."
+        },
+        "correta": "C"
+      }
+    }
+}
